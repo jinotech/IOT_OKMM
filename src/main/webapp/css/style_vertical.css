@@ -1,0 +1,594 @@
+/*전체*/
+.wrap {
+	margin: 0px;
+	font-family:NanumGothic, Malgun Gothic, Dotum, Arial,sans-serif;
+	background: url("../images/headbg.jpg") #D6E0E4 repeat-x scroll 0 0
+}
+
+/*------------------------------첫번째메인페이지---------------------------------*/
+
+/*헤더*/
+.header {
+	background: transparent;
+	height: 55px;
+	width: 1000px;
+	position: relative;
+	margin:0 auto;
+}
+
+/*로고*/
+.header h1 {
+	float: left;
+	margin-top:5px;
+}
+
+/*구글번역API*/
+.header #google_translate_element {
+	position: absolute;
+	right: -10px;
+	top: 45px;
+}
+
+/*로그인버튼*/
+.header h2 #topnavi {
+	margin-top:45px;
+	float:right;
+}
+
+.header h2 #topnavi li{
+	list-style-type: none;
+	float:left;
+	padding-right:10px;
+}
+/*sign up*/
+#topnavi .sign{
+	color:#999999;
+	font-size:11px;
+	padding-bottom:1px;
+}
+#topnavi .sign:hover{
+	opacity:0.8;
+	border-bottom:1px solid #999999;
+}
+/*페북로긴*/
+#topnavi .facesign{
+	background: url(../images/button_facebook.png) no-repeat 0 0;
+	border: 1px solid #083D73;
+	padding: 4px 6px 4px 30px;
+	color: white;
+	border-radius: 5px;
+	font-size:0.8em;
+	font-weight:bold;
+}
+#topnavi .facesign:hover{
+	opacity:0.8
+}
+
+/*컨텐츠높이 섹션별 높이*/
+.wrap .section black {
+	height: 500px;
+}
+
+/*첫번째contents*/
+.firstcontent {
+	background: #FFF;
+	width: 960px;
+	height:500px;
+	box-shadow: 2px 2px 5px #999;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	padding: 40px;
+	margin: 20px auto 0 ;
+}
+
+/*Design your mind*/
+.slogan {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 40pt;
+	float:left;
+	padding-left:60px;
+	color:#666666;
+	margin-top:10px;
+}
+
+.slogan span{
+	color:#f79d00;
+}
+
+
+
+/*메인 유투브*/
+iframe {
+	float: left;
+	box-shadow: 2px 2px 5px #999;
+}
+
+
+/*메인버튼*/
+h3 .click {
+	background-color: #B0C230;
+	padding: 15px 52px;
+	margin-top:20px;
+	float:right;
+	margin-right:75px;
+	border-radius:10px;
+	border:#E4DB1D 1px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 18pt;
+	color:#ffffff;
+	box-shadow: 2px 2px 3px #999;
+}
+
+
+h3 .click:hover {
+	background-color: #C1D134;
+	color:#ffffff;
+}
+
+
+/*페북로그인버튼*/
+.wrap #section1 .firstcontent .facebooklogin {
+background: #29447E url(../images/FGFbc80dUKj.png) no-repeat left -188px;
+cursor: pointer;
+display: inline-block;
+padding: 0 0 0 1px;
+text-decoration: none;
+outline: none;
+margin-top:10px;
+margin-left:130px;
+font-size: 11px;
+
+}
+
+
+.facebooklogin span{
+background: #5F78AB url(../images/FGFbc80dUKj.png);
+border-top: solid 1px #879AC0;
+border-bottom: solid 1px #1A356E;
+color: white;
+font-size:12px;
+display: block;
+font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+padding: 2px 6px 3px 6px;
+margin: 1px 1px 0 21px;
+text-shadow: none;
+}
+
+.facebooklogin span:hover{
+color: #fcd17e;
+}
+
+
+/*책소개*/
+.bookintro{
+	float:left;
+	width:250px;
+	height:180px;
+
+}
+.book{
+	width:330px;
+	height:150px;
+	background:#e0ebed;
+	margin-top:15px;
+	margin-left:30px;
+	border-radius:10px;
+	float:left;
+}
+.book img{
+	float:left;
+	margin-left:10px;
+}
+.book #booktitle1{
+	font-size:15px;
+	color:#1E98B6;
+	font-weight:600;
+	letter-spacing:-0.1em;
+	margin-top:30px;
+}
+.book #booktitle2{
+	font-size:30px;
+	color:#333333;
+	letter-spacing:-0.1em;
+	
+}
+.book #booktitle3{
+	font-size:20px;
+	color:#999999;
+	font-family:'Yanone Kaffeesatz', sans-serif
+}
+.book #bookmore{
+	font-size:0.7em;
+	letter-spacing:-0.1em;
+	text-align:right;
+	margin-right:40px;
+	margin-top:10px;
+}
+/*------------------------------컨텐츠---------------------------------*/
+/*메인컨텐츠*/
+.maincontent {
+	background: #FFF;
+	width: 960px;
+	height:600px;
+	box-shadow: 2px 2px 5px #999;
+	padding: 40px;
+	margin: 0 auto;
+}
+
+
+
+/*가운데 contents*/
+.content {
+	background: #FFF;
+	width: 960px;
+	height:150px;
+	box-shadow: 2px 2px 5px #999;
+	padding:40px;
+	margin: 0 auto;
+}
+
+/*특징배경*/
+.features{
+	width:960px;
+	margin:30px auto;
+}
+
+/*번호 인덱스*/
+.cell{
+	background-color: #4b89a9;
+	opacity:0.8;
+	margin-left: -1.5em;
+	padding: 5px 30px;
+	float:left;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 30pt;
+	color:#ffffff;
+	box-shadow: 2px 2px 3px #999;
+
+}
+
+/*번호옆에 타이틀01*/
+#title01{
+	letter-spacing:-1pt;
+	font-size:18pt;
+	font-weight:600;
+	color:#666666;
+	margin-left:50px;
+}
+
+/*제목밑에 내용*/
+#con01{
+	letter-spacing:-1pt;
+	line-height:150%;
+	font-size:13px;
+	color:#666666;
+	margin:20px 70px;
+}
+
+/*메인이미지*/
+.wrap #section2 .maincontent .mainimg{
+	margin-top:20px;
+	margin-left:55px;
+	background: #e8e4d4;
+	border-radius:20px;
+	height:300px;
+	width:850px;
+	color:#666666;
+}
+
+.wrap #section2 .maincontent .mainimg span {
+	float:left;
+}
+
+.wrap #section2 .maincontent .mainimg span p {
+	text-align:center;
+	letter-spacing:-1pt;
+	line-height:150%;
+	font-size:12px;
+	color:#666666;
+}
+
+.wrap #section2 .maincontent .mainimg span p:hover{
+	color:#f79d00;
+}
+
+
+/*네비게이션*/
+.maincontent .menu2 .nav {
+	margin-left:400px;
+	margin-top:20px;
+}
+
+.maincontent .menu2 .nav li{
+	float:left;
+	padding-left:10px;
+	opacity:0.5;
+}
+.maincontent .menu2 .nav li:hover{
+	opacity:0.8;
+}
+
+.maincontent .menu2 .nav #right{
+	float:right;
+	font-size:0.8em;
+	color:#999999;
+	font-weight:bold;
+	padding-left:5px;
+}
+.maincontent .menu2 .nav #left{
+	float:left;
+	font-size:0.8em;
+	color:#999999;
+	font-weight:bold;
+	padding-right:5px;
+}
+
+/*2번타이틀*/
+#title02{
+	letter-spacing:-1pt;
+	font-size:20pt;
+	font-weight:600;
+	color:#666666;
+	padding-left:50px;
+	margin-top:15px;
+	text-align:left;
+}
+
+/*동영상*/
+.content center .mov {
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+	width:240px;
+	height:150px;
+}
+
+/*동영상옆에내용*/
+.content .textleft {
+	float:left;
+	width:530px;
+}
+.content .textleft #subtitle{
+	letter-spacing:-1pt;
+	font-size:15pt;
+	font-weight:bold;
+	color:#4b89a9;
+	margin-left:20px;
+	margin-top:15px;
+}
+
+.content .textleft #minititle{
+	letter-spacing:-1pt;
+	font-size:12pt;
+	font-weight:bold;
+	color:#444444;
+	margin-left:20px;
+	margin-top:5px;
+}
+.content .textleft ol{
+	letter-spacing:-1pt;
+	line-height:150%;
+	font-size:13px;
+	color:#666666;
+	margin-top:5px;
+	margin-left:50px;
+	list-style-type: decimal;
+}
+
+
+/*두번째페이지부터 네비게이션*/
+.menu1 .nav {
+	float:right;
+	margin-right:50px;
+
+}
+
+.menu1 .nav li{
+	float:left;
+	padding-left:10px;
+	opacity:0.5;
+}
+.menu1 .nav li:hover{
+	opacity:0.8;
+}
+
+.menu1 .nav #right{
+	float:right;
+	font-size:0.8em;
+	color:#999999;
+	font-weight:bold;
+	padding-left:5px;
+}
+.menu1 .nav #left{
+	float:left;
+	font-size:0.8em;
+	color:#999999;
+	font-weight:bold;
+	padding-right:5px;
+}
+
+
+/*마인드맵콘텐츠배경*/
+.contentmm {
+	background: #FFF;
+	width: 960px;
+	height:400px;
+	box-shadow: 2px 2px 5px #999;
+	padding:200px 40px 40px 40px;
+	margin: 0 auto;
+}
+
+
+/*마인드맵 리스트*/
+.mindmaplist {
+	margin:20px auto;
+	width:850px;
+}
+
+.mindmaplist .mm{
+	width:400px;
+	float:left;
+	padding:10px;
+	border:#ffffff solid 1px;
+}
+
+
+.mindmaplist .mm:hover{
+	border-radius:10px;
+	border:#aac5d0 solid 1px;
+	background-color:#ebf2f4;
+
+}
+
+
+
+#mmimg {
+	float:left;
+	margin-right:10px;
+	border:#accbda 1px solid;
+}
+
+
+#imgtitle {
+	font-size:1.1em;
+	color:#4b89a9;
+	letter-spacing:-1pt;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+
+
+
+#imgwirte {
+	padding-right:10px;
+	float:left;
+	font-size:0.8em;
+	color:#f79d00;
+	letter-spacing:-1pt;
+}
+#imgdate {
+	float:left;
+	font-size:0.8em;
+	color:#666666;
+	letter-spacing:-1pt;
+}
+
+/*게시판콘텐츠배경*/
+.contentboard {
+	background: #FFF;
+	width: 960px;
+	height:500px;
+	box-shadow: 2px 2px 5px #999;
+	padding: 40px;
+	margin: 0 auto;
+}
+
+
+/*게시판 아이프레임*/
+.board {
+	border:none;
+	width:800px;
+	height:400px;
+	margin:0 auto;
+	margin-left:40px;
+	box-shadow:none;
+}
+
+
+/*푸터 컨텐츠 배경*/
+.contentfooter {
+	background:url(../images/bg_footer.png);
+	width: 960px;
+	height:450px;
+	box-shadow: 2px 2px 5px #999;
+	padding: 40px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;text-align:center;
+}
+
+/*Contact us*/
+.contentfooter #contact {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 40pt;
+	color:#cccccc;
+	
+}
+
+/*푸터 어드레스*/
+.footer h2{
+	
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:48pt;
+	color:#999999;
+	margin-left:150px;
+	margin-bottom:30px;
+	
+	
+}
+
+.address{
+	position:relative;
+	width:600px;
+	height:240px;
+	margin:0px auto;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAL0lEQVQIW2MsKCiYyYAE7t69y8CILAgSUFZWRgjCBECawCqRBcCCvr6+M0FakAEA+kAVKksLYhIAAAAASUVORK5CYII=);
+	opacity:0.5
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	padding-top:20px;
+	
+}
+
+#com{
+	float:left;
+	width:295px;
+}
+
+
+#line{
+	float:left;
+	width:10px;
+}
+
+#pm{
+	float:left;
+	width:295px;
+}
+.address p{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20pt;
+	color:#cccccc;
+	padding:10px;
+}
+.address li{
+	font-family: 'NanumGothic', Malgun Gothic, Dotum;
+    font-size: 9pt;
+	color:#ededed;
+	list-style:none;
+}
+
+
+
+.link{
+	margin:50px auto;
+	width:110px;
+}
+
+.link img{
+	float:left;
+}
+.link img:hover{
+	opacity:0.7;
+}
+
+/*카피라이트*/
+.copy{
+	margin:20px auto;
+	width:960px;
+	text-align:center;
+	height:40px;
+	font-size:0.6em;
+	color:#666666;
+}

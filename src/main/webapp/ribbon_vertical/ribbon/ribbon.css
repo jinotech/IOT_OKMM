@@ -1,0 +1,469 @@
+body
+{
+
+}
+
+.page
+{
+	border: 1px solid #a5acb5;
+	margin: 20px;
+	padding: 15px;
+	-webkit-box-shadow: #000000 0px 0px 10px;
+	-moz-box-shadow: #000000 0px 0px 10px;
+	box-shadow: #000000 0px 0px 10px;
+	background: #FFF;
+	behavior: url(/PIE.htc);
+}
+
+#ribbon
+{
+	font-family: "Segoe UI" , Verdana, Tahoma, Helvetica, sans-serif;
+	cursor: default;
+	font-size: 8pt;
+	background-color: #eaedf1;
+	-webkit-box-shadow: #8b9097 0px 1px 3px;
+	-moz-box-shadow: #8b9097 0px 1px 3px;
+	box-shadow: #8b9097 0px 1px 3px;
+	overflow: hidden;
+	behavior: url(/PIE.htc);
+	z-index: 25;
+	position: absolute;
+	width: 240px;
+	float:left;
+	margin-top:30px;
+}
+
+#ribbon.backstage
+{
+	height: auto;
+	bottom: 0;
+}
+
+.titlebar{
+	width:100%;
+	text-align: center;
+	color: #fff;
+	padding: 2px;
+	font-size: 8pt;
+	background:#444;
+	position: absolute;
+	top: 0;
+	left:0;
+	height:30px;
+	border-bottom: 1px solid black;
+
+}
+
+
+.ribbon-window-title
+{
+}
+
+#ribbon #ribbon-tab-header-strip
+{
+	margin-top:10px;
+	white-space: nowrap;
+	float:left;
+}
+
+#ribbon .ribbon-tab-header
+{
+	margin: 2px 5px;
+	padding: 5px 10px;
+	font-size: 8pt;
+	color: #444; /*border: 1px solid #eaedf1;*/
+	position: relative;
+	z-index: 40;
+	width:40px;
+	text-align:center;
+
+
+}
+
+#ribbon.backstage .ribbon-tab-header
+{
+	
+}
+
+#ribbon .ribbon-tab-header:hover
+{
+	background: #3ABCC2;
+	cursor: pointer;
+	color: white;
+}
+
+#ribbon.backstage .ribbon-tab-header
+{
+
+}
+
+#ribbon .ribbon-tab-header.sel, #ribbon .ribbon-tab-header.sel:hover
+{
+	background: #fff;
+	border: 1px solid #b6babf;
+	cursor: default;
+	z-index: 45;
+	color:#444;
+}
+
+#ribbon .ribbon-tab-header.file
+{
+	padding: 5px 20px;
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#71CCFF),color-stop(100%,#3096E6));
+	background-image: -webkit-linear-gradient(#71CCFF,#3096E6);
+	background-image: -moz-linear-gradient(#71CCFF,#3096E6);
+	background-image: -o-linear-gradient(#71CCFF,#3096E6);
+	background-image: linear-gradient(#71CCFF,#3096E6);
+	border: 1px solid #1B74D8;
+	border-bottom: 1px solid #4488e5;
+	cursor: default;
+	color: #fff;
+}
+
+
+#ribbon .ribbon-tab-header.file:hover
+{
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#71CCFF),color-stop(100%,#3096E6));
+	background-image: -webkit-linear-gradient(#71CCFF,#3096E6);
+	background-image: -moz-linear-gradient(#71CCFF,#3096E6);
+	background-image: -o-linear-gradient(#71CCFF,#3096E6);
+	background-image: linear-gradient(#71CCFF,#3096E6);
+	border: 1px solid #1B74D8;
+	cursor: pointer;
+	border-bottom: 1px solid #4488e5;
+	z-index: 55;
+	position: relative;
+}
+#ribbon .ribbon-tab-header.file.sel
+{
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#71CCFF),color-stop(100%,#3096E6));
+	background-image: -webkit-linear-gradient(#71CCFF,#3096E6);
+	background-image: -moz-linear-gradient(#71CCFF,#3096E6);
+	background-image: -o-linear-gradient(#71CCFF,#3096E6);
+	background-image: linear-gradient(#71CCFF,#3096E6);
+	border: 1px solid #1B74D8;
+	cursor: pointer;
+	border-bottom: 1px solid #4488e5;
+	z-index: 55;
+	position: relative;
+}
+
+#ribbon .ribbon-tab
+{
+	padding: 5px;
+	background: #FFF url('rib-back.png') repeat-x bottom;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#eaedf1));
+	background: -moz-linear-gradient(#ffffff, #eaedf1); /*-pie-background: linear-gradient(#ffffff, #eaedf1);*/
+	overflow: hidden;
+	behavior: url(/PIE.htc);
+	z-index: 30;
+	-pie-watch-ancestors: 2;
+	width:140px;
+	float:left;
+}
+
+#ribbon .ribbon-tab.file
+{
+	padding: 0;
+	margin-top: 5px;
+	overflow: hidden;
+	min-width: 500px;
+	z-index: 30;
+	
+	/*--background-color:#4488e5;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#4488e5, endColorstr=#ffffff);
+	background-image:-moz-linear-gradient(left, #4488e5 15%, #ffffff 100%);
+	background-image:-webkit-linear-gradient(left, #4488e5 15%, #ffffff 100%);
+	background-image:-ms-linear-gradient(left, #4488e5 15%, #ffffff 100%);
+	background-image:linear-gradient(left, #4488e5 15%, #ffffff 100%);
+	background-image:-o-linear-gradient(left, #4488e5 15%, #ffffff 100%);
+	background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(15%,#4488e5), color-stop(100%,#ffffff));--*/
+
+}
+
+#ribbon .folding-tab               //wonho 占쎌쥙�⒳펺�뗭삕��옙�얠삕占쎌늿�뺧옙醫롫짗占쎌닂�숋쭚�몄맶�좎럥�녽�占쎈쐻占쎌늿�뺧옙醫롫윪鴉딆닂�숋옙�뚯굲�좎뜫�뉛옙瑜낆삕沃섃뫜�쇿뜝�덈꺼占쎌늼�ユ에�ъ�傭�끉猷녻린�⑥삕占쎌슜�삣뜝�꾩뫊�룸끀�앾옙��첓�좎떥�ъ맶�좎럩�울옙類㏃삕占썩뫖援�뜝�덈꺼占쎌늼�ワ쭔�뗫탩obbon-tab	占쎌쥙�∽옙�밸쇀占쎈굞�뺧옙醫롫윥�멸쒀�숅넫濡レ몧�좎럩鍮�옙�껋쪎占쎈챷�꾢뜝�뚯쪠�룹쉻�숋옙�⑹맶�좎럥�뉛옙類앸쐻占쎈슢�ｅ뜝�뚮닲占쎌빢�숃쳸紐꾬옙��뗀援앾㎖硫⑤쐻占쎈��삣뜝�뚮듌占쏙옙
+{
+	height: 10px;
+	padding: 5px;
+	margin-top: 5px;
+	border-top: 1px solid #b6babf;
+	overflow: hidden;
+	min-width: 500px;
+	behavior: url(/PIE.htc);
+	z-index: 30;
+	-pie-watch-ancestors: 2;
+}
+
+#ribbon .ribbon-backstage
+{
+	display: none;
+}
+
+
+#ribbon.backstage .ribbon-backstage
+{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: #FFF;
+	width:250px;
+	left: 15px;
+	top:63px;
+	border: 1px solid #DEDEDE;
+}
+
+#ribbon .section-title
+{
+	color: #5B626C;
+	text-align: center;
+	clear: left;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2px;
+	border-top: 1px solid #DEDEDE;
+	background: rgba(61, 61, 61, 0.04);
+
+}
+
+#ribbon .ribbon-section
+{
+	float: left;
+	position: relative;
+	border: 1px solid #DEDEDE;
+	border-radius: 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	margin:3px 0;
+	padding-bottom: 20px;
+}
+
+#ribbon .ribbon-section-sep
+{
+	border-left: 1px solid #E0E0E0;
+	border-right: 1px solid #fff;
+	margin: 0 5px;
+	height: 75px;
+	position: relative;
+	width: 0;
+	float: left;
+}
+
+#ribbon .ribbon-button
+{
+	padding: 2px;
+	border: 1px solid transparent;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#ribbon .ribbon-button-large
+{
+	text-align: left;
+	width: 130px;
+	height:30px;
+	position:relative;
+}
+
+#ribbon .ribbon-button-small
+{
+	padding: 3px 4px;
+	text-align: left;
+}
+
+#ribbon .ribbon-button .button-help
+{
+	display: none;
+}
+
+#ribbon .ribbon-button .button-title
+{
+	color: #444;
+}
+
+#ribbon .ribbon-button-large .button-title
+{
+line-height:300%;
+padding-left:3px;
+}
+
+#ribbon .ribbon-button-large .ribbon-icon
+{
+	margin: auto;
+	float:left;
+}
+
+#ribbon .ribbon-button-small .ribbon-icon
+{
+	width: 16px;
+	height: 16px;
+	float: left;
+	clear: left;
+	margin: -1px 5px 0px 1px;
+}
+#ribbon .ribbon-button .ribbon-icon.ribbon-hot, #ribbon .ribbon-button .ribbon-icon.ribbon-disabled
+{
+	display: none;
+	float:left;
+}
+
+#ribbon .ribbon-button-large .ribbon-icon.ribbon-normal
+{
+	display: block;
+}
+
+#ribbon .ribbon-button:hover .ribbon-icon.ribbon-normal
+{
+	display: none;
+}
+
+#ribbon .ribbon-button-large:hover .ribbon-icon.ribbon-hot
+{
+	display: block;
+}
+#ribbon .ribbon-button-small .ribbon-icon.ribbon-normal
+{
+	display: inline;
+}
+
+#ribbon .ribbon-button-small:hover .ribbon-icon.ribbon-hot
+{
+	display: inline;
+}
+
+#ribbon .ribbon-button:hover, #ribbon .ribbon-button.sel /*---�좎럥占썽��⑤┛熬곥굥諭ｅ슖�뀀걠占썬끂由계쥈�뗫빳�좎럡�ч뇡占�*/
+{
+	border: 1px solid #F1C43F;
+	background: #FEE486;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FEF9C9), to(#FEE486));
+	background: -moz-linear-gradient(#FEF9C9, #FEE486);
+	-pie-background: linear-gradient(#fef9c9, #fee486);
+	cursor: pointer;
+	
+}
+#ribbon .ribbon-button:active/*---�좎럥占썽��⑤┛熬곥굥諭ｅ뜝�덌옙占쎄퍐由계쥈�뗫빳�좎럡�ч뇡占�*/
+{
+	background: #F1C43F;
+	cursor: pointer;
+}
+
+#ribbon .ribbon-button.disabled .ribbon-icon, #ribbon .ribbon-button.disabled:hover .ribbon-icon
+{
+	display: none;
+}
+#ribbon .ribbon-button.disabled .ribbon-icon.ribbon-disabled
+{
+	display: block;
+	opacity: 0.5;
+
+}
+#ribbon .ribbon-button.disabled .ribbon-icon.ribbon-implicit-disabled
+{
+	opacity: 0.4;
+}
+
+#ribbon .ribbon-button.disabled:hover
+{
+	border: 1px solid transparent;
+	background: transparent;
+	cursor: default;
+}
+#ribbon .ribbon-button.disabled:active
+{
+	border: 1px solid transparent;
+	background: transparent;
+	cursor: default;
+}
+
+#ribbon .ribbon-button.disabled .button-title
+{
+	color: silver;
+}
+
+.ribbon-tooltip
+{
+	font-family: "Segoe UI" , Verdana, Tahoma, Helvetica, sans-serif;
+	font-size: 10pt;
+	position: fixed;
+	z-index: 5000;
+	border: 1px solid #8b9097;
+	background-color: #e5e5f0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e5e5f0));
+	background: -moz-linear-gradient(#ffffff, #e5e5f0);
+	-pie-background: linear-gradient(#ffffff, #e5e5f0);
+	padding: 5px;
+	-webkit-box-shadow: #c6c9cd 1px 1px 3px;
+	-moz-box-shadow: #c6c9cd 1px 1px 3px;
+	box-shadow: #c6c9cd 1px 1px 3px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	top: 150px !important;
+}
+.left_sml{
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+/*----�좎럥理롳㎕蹂⑹삕�좑옙-*/
+.topbar{
+	background:#333;
+	width:100%;
+	position:absolute;
+	top:0;
+}
+
+.logo {
+	float: left;
+	margin: 0;
+	padding: 0;
+	opacity:0.5;
+	cursor:pointer;
+}
+.logo:hover {
+	opacity:0.7;
+}
+
+.maptitle {
+	padding: 7px;
+	display: inline-block;
+}
+.topright{
+	float:right;
+	
+}
+.nav{
+	float:left;
+	font-size:12px;
+	padding-top:7px;
+}
+.username{
+	
+}
+.userinfo{
+	list-style:none;
+}
+.lang {
+	margin: 5px 10px;
+	font-size:9pt;
+}
+.folding {
+	text-align: center;
+	padding: 0;
+	position:relative;
+	display:inline-block;
+	float:right;
+}
+
+
+#folding-RB {
+	margin: 0 auto;
+	text-align: center !important;
+	padding: 0 !important;
+	background: #ededed;
+	border-radius: 0 !important;
+}

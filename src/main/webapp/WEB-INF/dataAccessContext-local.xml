@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  - Application context definition for JPetStore's data access layer.
+  - Accessed by business layer objects defined in "applicationContext.xml"
+  - (see web.xml's "contextConfigLocation").
+  -
+  - This version of the data access layer works on a combined database,
+  - using a local DataSource with DataSourceTransactionManager. It does not
+  - need any JTA support in the container: It will run as-is in plain Tomcat.
+  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+						http://www.springframework.org/schema/tx
+						http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- ========================= RESOURCE DEFINITIONS ========================= -->
+
+	<!-- Local Apache Commons DBCP DataSource that refers to a combined database -->
+	<!-- The placeholders are resolved from jdbc.properties through -->
+	<!-- the PropertyPlaceholderConfigurer in applicationContext.xml -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+		<!-- property name="connectionProperties" value="useUnicode=true;characterEncoding=UTF8;"/ -->
+	</bean>
+
+	<!-- Transaction manager for a single JDBC DataSource -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- 
+	<aop:config>
+		<aop:advisor pointcut="execution(* *..MindmapService.*(..))" advice-ref="txAdvice"/>
+	</aop:config>
+	-->
+	
+	<!-- 
+	<tx:advice id="txAdvice">
+		<tx:attributes>
+			<tx:method name="save*"/>
+			<tx:method name="*" read-only="true"/>
+		</tx:attributes>
+	</tx:advice>
+	-->
+	
+	
+	<!-- ========================= DAO DEFINITIONS: IBATIS IMPLEMENTATIONS ========================= -->
+	<!-- SqlMap setup for iBATIS Database Layer -->
+	<!-- 
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation" value="WEB-INF/sql-map-config.xml"/>
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	 -->
+	
+	<context:annotation-config />
+	
+	<!-- ========================= DAO DEFINITIONS: Spring IMPLEMENTATIONS ========================= -->
+	<bean id="mindmapDAO" class="com.okmindmap.dao.mysql.spring.SpringMindmapDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+
+	<bean id="userDAO" class="com.okmindmap.dao.mysql.spring.SpringUserDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="userMenuDAO" class="com.okmindmap.dao.mysql.spring.SpringUserMenuDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="categoryDAO" class="com.okmindmap.dao.mysql.spring.SpringCategoryDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="chatDAO" class="com.okmindmap.dao.mysql.spring.SpringChatDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	
+	
+	<bean id="queueDAO" class="com.okmindmap.dao.mysql.spring.SpringQueueDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="groupDAO" class="com.okmindmap.dao.mysql.spring.SpringGroupDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="shareDAO" class="com.okmindmap.dao.mysql.spring.SpringShareDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="boardDAO" class="com.okmindmap.dao.mysql.spring.SpringBoardDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="boardMemoDAO" class="com.okmindmap.dao.mysql.spring.SpringBoardMemoDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="repositoryDAO" class="com.okmindmap.dao.mysql.spring.SpringRepositoryDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="restrictDAO" class="com.okmindmap.dao.mysql.spring.SpringRestrictDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="okmindmapDAO" class="com.okmindmap.dao.mysql.spring.SpringOKMindmapDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="discussDAO" class="com.okmindmap.dao.mysql.spring.SpringDiscussDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+	
+	<bean id="noticeDAO" class="com.okmindmap.dao.mysql.spring.SpringNoticeDAO">
+		<!-- <property name="dataSource" ref="dataSource"/> -->
+	</bean>
+</beans>

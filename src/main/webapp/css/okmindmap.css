@@ -1,0 +1,280 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+	padding:0;
+	margin:0;	
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:#333;	
+}
+table {
+font-size: 12px;
+margin: 8px;
+width: 97%;
+}
+
+table td{
+	padding:1px;	
+}
+
+table th {
+font-size: 13px;
+font-weight: 600;
+padding: 3px 0;
+border-bottom: 1px solid #3ABCC2;
+border-top: 1px solid #3ABCC2;
+background: rgba(167, 212, 214, 0.46);
+color: #0F6F74;
+}
+
+
+input[type="text"], select, input[type="password"] {
+background: #f2f2f2;
+border: 1px solid #ccc;
+border-radius: 3px;
+box-shadow: inset 1px 1px 3px #ccc;
+-moz-box-shadow: inset 1px 1px 3px #ccc;
+-webkit-box-shadow: inset 1px 1px 3px #ccc;
+color: #333;
+font-size: 12px;
+padding: 3px;
+margin: 2px;
+}
+
+button, input[type="submit"], input[type="button"]{
+color: #FFF;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+background-color: rgb(204, 28, 13);
+background-repeat: repeat-x;
+box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-ms-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+border: none;
+padding: 4px 8px;
+margin: 2px;
+font-size:12px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-ms-border-radius:2px;
+cursor:pointer;
+}
+
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	background-color: #000;
+	-webkit-transition: background-color 300ms linear;
+	-moz-transition: background-color 300ms linear;
+	-o-transition: background-color 300ms linear;
+	-ms-transition: background-color 300ms linear;
+	transition: background-color 300ms linear;
+}
+
+/*踰꾪듉 媛��슫�뜲�쟻�슜*/
+.btncenter {
+	text-align: center;
+	margin: 10px 0;
+}
+
+
+/*�깉 留덉씤�뱶留�
+----------------*/
+.map-new-label.nobody {
+font-weight: bold;
+font-size: 13px;
+}
+
+.map-new-input.nobody {
+padding: 2px 0;
+}
+
+/*留덉씤�뱶留� �뿴湲�
+-------------------*/
+
+table.openmaptable td{
+	padding:5px 0;
+	border-bottom:1px dotted #ccc;
+}
+
+/*�씠誘몄�異붽�
+-----------*/
+#contentSizeSet, .html5_notice ,.html5_notice a{
+font-size: 75%;
+}
+#contentSizeSet div{
+margin:10px 0;
+}
+
+/*�궡蹂대궡湲�
+------------*/
+.exportFile {
+float: left;
+width: 20%;
+height: 60px;
+margin: 5px;
+cursor: pointer;
+font-size: 11px;
+font-weight: bold;
+}
+.icon-disabled{
+	opacity: 0.5;
+	cursor:not-allowed;
+}
+
+/*SNS export*/
+.okm-sns {
+	top: 180px;
+	left: 5px;
+	position: absolute;
+	z-index: 800;
+	border-radius: 5px;
+	padding: 5px;
+	width:100px;
+
+}
+
+#share_sns,#like_fb{
+	text-transform: uppercase;
+	font-size: 10px;
+	color: gray;
+	float:left;
+	margin: 10px 10px 0 8px;
+	font-weight:bold
+}
+
+.okm-sns .okm-twitter {
+	background: url(../images/twittericon.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.okm-facebook {
+background: url(../images/facebookicon.png) no-repeat;
+cursor: pointer;
+display: inline-block;
+text-decoration: none;
+outline: none;
+margin-right:5px;
+margin-top:5px;
+width:25px;
+height:25px;
+}
+
+.okm-sns .okm-twitter:hover,.okm-sns .okm-facebook:hover {
+	opacity:0.8;
+}
+
+
+.like_bg{
+	position: absolute;
+	top: 50px;
+	right: 5px;
+	z-index: 990;
+	background: 
+	#EDEDED;
+	border: 1px solid 
+	#DEDEDE;
+	border-radius: 5px;
+	width:145px;
+	height:30px;
+}
+
+.facebook_login{
+	float: left; 
+	padding: 2px;
+	background: url(../images/facebook_login.png) no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	margin-top:2px;
+	width:127px;
+	height:25px;
+}
+.general_join{
+	float: left; 
+	padding: 2px;
+	background: url(../images/general_join.png) no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	margin-top:2px;
+	width:218px;
+	height:42px;
+	margin-bottom:38px;
+}
+.facebook_join{
+	float: left; 
+	padding: 2px;
+	background: url(../images/facebook_join.png) no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	margin-top:2px;
+	width:218px;
+	height:42px;
+}
+.general_join a{
+	color:#fff;
+	font-size:18px; 
+	margin-left:82px; 
+	line-height:41px;
+}
+.facebook_join a{
+	color:#fff;
+	font-size:14px; 
+	margin-left:82px; 
+	line-height:39px;
+}
+.fb_edge_widget_with_comment{
+	float:left;
+}
+.middleimg{
+	valign:center;
+}
+.middleimg img{
+	width:13px;
+	height:13px;
+}
+
+.dropout {
+	padding: 10px;
+	font-size: 12px;
+}
+.h_dropout {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #333;
+	text-align: left;
+}
+.dropout_agree_area {
+	margin-top: 10px;
+	color: #333;
+	line-height: 24px;
+}
+.dropout_agree_area input {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+.dropout_agree_area input#password {
+	width: 100px;
+}
+.dropout_agree_area label {
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+    vertical-align: middle;
+}
+.dropout_error {
+	font-size: 12px;
+	font-weight: bold;
+    color: #f00;
+    line-height: 30px;
+}

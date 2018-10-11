@@ -1,0 +1,141 @@
+/*
+ * SimpleModal Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 242 2010-03-14 00:55:02Z emartin24 $
+ *
+ */
+
+/******************** 공통 ********************/
+/* Overlay */
+#okm-overlay {background-color:#000; cursor:wait;}
+a.simplemodal-close {background:url(../images/x.png) no-repeat; width:16px; height:16px; display:inline; z-index:3200; position:absolute; top:5px; right:5px; cursor:pointer;}
+
+/* simplemodal-container */
+.simplemodal-container {
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border:1px solid #cccccc;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5);
+		
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5);
+		
+	background:url(../images/dialog_title.png) repeat-x top #fefefe;
+	opacity:0.97;//wonho 추가 모든 모달메뉴를 투명하게
+}
+
+/******************** 개별 ********************/
+/* New Map */
+#newmap-container {/*height:185px; width:340px;*/}
+
+/* New Map */
+#newmapguest-container {/*height:240px; width:340px;*/}
+
+/* New Map - Mobile */
+#newmap_m-container {height:100%; width:100%; color:#bbb; background-color:#fff; border:4px solid #444;}
+
+/* Open Map */
+#openmap-container {/*height:550px; width:630px;*/}
+
+/* Open Map - Mobile */
+#openmap_m-container {height:100%; width:100%; color:#bbb; background-color:#fff; border:4px solid #444;}
+
+/* Import Map */
+#importmap-container {height:130px; width:480px;}
+
+/* Import Bookmark */
+#importbookmark-container {height:130px; width:480px;}
+
+/* Group Manage */
+#groupmap-container {height:440px; width:480px;}
+
+/* Share Manage */
+#sharemap-container {height:300px; width:470px;}
+
+/* Join Member */
+#joinmember-container {height:340px; width:490px;}
+
+/* Edit Profile */
+#updateProfile-container {height:340px; width:600px;}
+
+/* customMashup Google */
+#mashup_google_image-container {height:550px; width:600px;}
+#mashup_google_video-container {height:490px; width:750px;}
+
+/* OKM Preference */
+#okmPreference-container {height:300px; width:400px;}
+
+/* File Upload */
+#fileupload-container {height:210px; width:600px;}
+
+/* login */
+#login-container {height:240px; width:440px;}
+#login_m-container {height:100%; width:100%;}
+
+/* password popup*/
+#passwordpopup-container {height:225px; width:450px;}
+
+/* Edit Profile */
+#editProfile-container {/*height:300px; width:400px;*/}
+
+/* requestFunction */
+#requestFunction-container {height:400px; width:605px;}
+
+/* SNS */
+#sns-container {height:300px; width:600px; padding-top:40px;}
+
+/* common */
+img {
+	border:0;
+}
+
+h3 {
+	text-align: center;
+	color:#5f73c9;
+	font-family:"NanumGothicBolder",Malgun Gothic,sans-serif;
+}
+
+.submit_btn {
+	background:url(../images/submit_btn.png) no-repeat left top;
+	color:#3399cc;
+	letter-spacing:-1px;
+	height:21px;
+	width:49px;
+	display:inline-block;
+	margin:0;
+	padding:3px 1px 2px 6px;
+	border:none;
+	font-family:"NanumGothicBolder",Malgun Gothic,sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.submit_btn:hover {
+	background-position:right top;
+	color:#5a77c2;
+}
+
+.recover-label {
+	color: #3399cc;
+	width: 23%;
+	font-size: 12px;
+	padding: 3px;
+	padding-right: 10px;
+	font-weight:bold;
+}
+
+/*그룹관리*/
+#groupmap-data iframe{
+	width:480px;
+	height:435px;
+}
+

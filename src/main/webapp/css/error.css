@@ -1,0 +1,51 @@
+body{
+	background:#eee;
+}
+
+h1.logo {
+width: 660px;
+margin: 120px auto 0;
+}
+.erroricon {
+text-align: center;
+font-family: NanumGothic, Malgun Gothic, Dotum, Arial,sans-serif;
+width: 600px;
+margin: 10px auto;
+padding: 30px;
+box-shadow: 1px 1px 30px #ccc;
+-moz-box-shadow: 1px 1px 30px #ccc;
+-webkit-box-shadow: 1px 1px 30px #ccc;
+background: #fff;
+border-top: 4px solid #3ABCC2;
+border-bottom: 2px solid #B0D1D3;
+}
+
+.errornotice {
+font-size: 30px;
+letter-spacing: -1pt;
+color: #333;
+margin: 10px 0 10px;
+}
+
+.errornotice span{
+	color:#3ABCC2;
+	font-weight:600;
+}
+.errorinfo {
+font-size: 15px;
+letter-spacing: -1px;
+padding: 10px 0;
+color: #999;
+font-weight: 600;
+}
+
+button{
+font-size: 12px;
+background: #fff;
+padding: 3px 7px;
+border: 1px solid #ccc;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 2px;
+cursor: pointer;
+}

@@ -1,0 +1,195 @@
+
+@media all and (max-width: 450px) {
+	ul.tabs a { 
+		background: url(../images/opentab_blue.png) no-repeat -420px 0;
+		font-size:11px;
+		display:block;
+		height: 30px;  
+		line-height:30px;
+		text-align:center;	
+		text-decoration:none;
+		color:#333;
+		padding:0px;
+		margin:0px;	
+		position:relative;
+		top:1px;
+		padding: 0px 10px 0px 10px;
+	}
+	.imgContainer {
+		padding: 7px;
+		float: none;
+		height:88px;
+		width:69px;
+		text-align:center;
+		vertical-align: middle;			
+		display: inline-block;
+	}
+	.imgContainer img{
+		width:73px;
+		height:85px;
+	}
+	.videoContainer{
+		padding: 7px;
+		float:left;
+		height:88px;
+		width:69px;
+		text-align:center;
+		vertical-align: middle;			
+		display: inline-block;
+	}	
+	.videoContainer img{
+		width:73px;
+		height:85px;
+	}
+	#dataview-content-video {
+			background-color: #FFFFFF;
+			overflow: auto;
+			height:190px;
+			vertical-align: middle;
+			margin:0;
+		}
+}
+@media all and (min-width: 452px) {
+	ul.tabs a { 
+		background: url(../images/opentab_blue.png) no-repeat -420px 0;
+		font-size:11px;
+		display:block;
+		height: 30px;  
+		line-height:30px;
+		width: 134px;
+		text-align:center;	
+		text-decoration:none;
+		color:#333;
+		padding:0px;
+		margin:0px;	
+		position:relative;
+		top:1px;
+	}
+	.imgContainer {
+		padding: 7px;
+		float: none;
+		height: 150px;
+		width: 150px;
+		text-align:center;
+		vertical-align: middle;			
+		display: inline-block;
+	}
+	.imgContainer img{
+		width: 100%;
+	}
+	
+	.videoContainer{
+		padding: 7px;
+		float:left;
+		height:100px;
+		width:150px;
+		text-align:center;
+		vertical-align: middle;			
+		display: inline-block;
+	}
+	#dataview-content-video {
+			background-color: #FFFFFF;
+			overflow: auto;
+			height:230px;
+			vertical-align: middle;
+			margin:0;
+		}
+}
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 auto 0; 
+	padding:0;	
+	height:30px;
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	background-position: -420px -31px;	
+	color:#fff;	
+}
+
+
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+/*
+ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover 	{ background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+*/
+/* width 2 */
+/*
+ul.tabs a.l 			{ background-position: -248px -0px; width:174px; }
+ul.tabs a.l:hover 	{ background-position: -248px -31px; }
+ul.tabs a.l.current  { background-position: -248px -62px; }
+*/
+
+/* width 3 */
+/*
+ul.tabs a.xl 			{ background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover 	{ background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+*/
+
+/* tab pane styling */
+.panes {
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #DEDEDE;
+	font-size: 12px;
+	background-color: #EDEDED;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.pagenum {
+	text-align:center;	
+}
+
+.pagenum font{
+	padding:0 1px;	
+}
+.pagenum a strong{
+	font-weight:bold;
+	font-family: "NanumGothicBolder", Malgun Gothic, sans-serif;
+	color:#74C5CE
+}
+.panes input[type=button]{
+	
+}
+
+.panes input[type=button]:hover {
+	
+}
+

@@ -1,0 +1,105 @@
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			
+
+			
+			input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button, .savebtn{
+				background: url(../../images/light.png) 0 0 repeat-x #DEDEDE;
+				border: 1px solid #CCC;
+				border-radius: 2px;
+				color: #333;
+				font-size: 11px;
+				font-family: 'NanumGothicWeb';
+				cursor: pointer;
+				padding: 3px 8px;
+			}
+			
+			a{
+				font-size:12px;
+			}
+			
+			.wrapper{
+				margin:0;
+				padding:0;
+			}
+			
+			.header{
+				width:100%;
+				margin:0;
+				height:100px;				
+				border-bottom: 1px solid #666;
+				overflow-y:hidden;
+				background: #343434 url(../../images/bg_head.png) no-repeat;
+				
+			}
+			.adminlogo{
+				margin: 0;
+				color: white;
+				background: url('../../images/admin/adminicon.png') no-repeat 0 5px;
+				text-shadow: 1px 1px 0 black;
+				font-size: 16px;
+				height: 36px;
+				vertical-align: bottom;
+				padding-top: 15px;
+				padding-left: 40px;
+				margin-left: 10px;
+			}
+			
+			.dgistlogo{
+				margin: 0;
+				background: url('../../images/admin/dgistlogo.png') no-repeat 0 0;
+				height: 48px;
+				vertical-align: bottom;
+				margin-left: 40px;
+				margin-top: 15px;
+				font-size: 12px;
+				color: #E7E7E7;
+				padding-top: 52px;
+				padding-left: 0;
+				font-family: arial;
+			}
+			.main_content {
+				margin:0;
+				padding:0;
+			}
+			
+			.treeview_left{
+				float: left;
+				width: 180px;
+				height: 100%;
+				padding: 20px;
+				margin-left: 10px;
+				margin-top:10px;
+				border: 1px solid #DEDEDE;
+			}
+			.tablewrap{
+				padding: 10px;
+				margin: 0;
+				margin-left: 230px;
+			}
+			.tables{
+				border: 1px solid #DEDEDE;
+				height: 600px;
+			}
+						
+			#adminframe{
+				width:100%;
+			}
+			.footer {
+				width: 100%;
+				background: #505050;
+				height: 75px;
+				border-top: 6px solid #DFDFDF;
+				position:absolute;
+				bottom:0;
+				font-family: 'NanumGothicWeb';
+			}
+			.copyright {
+				color: #999;
+				font-size: 8pt;
+				text-align: center;
+				letter-spacing: 0;
+				padding-top: 13px;
+			}

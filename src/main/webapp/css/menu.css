@@ -1,0 +1,54 @@
+html {
+	background-color: #fff;
+}
+em#homelabel {
+	text-indent: -6em;
+	display: block;
+	background: url(../images/okmlogo.png) no-repeat 0 0;
+	height:33px;
+	padding:0;
+	margin:0;
+	border:none;
+	width: 105px;
+	overflow: hidden;
+}
+
+em#homelabel:hover {
+	background-position:0 -33px;
+
+
+}
+
+
+em#backlabel {
+	text-indent: -8em;
+	display: block;
+	background: url(../images/homebtn.png) no-repeat left top;
+	height:3px; 	
+	margin-top:5px;
+	padding:3px 1px 2px 6px;   
+	border:none;
+	width: 15px;
+	overflow: hidden;
+}
+em#backlabel:hover {
+	background-position:right top;
+}	
+/*
+	Setting the "zoom" property to "1" triggers the "hasLayout"
+	property in IE.  This is necessary to fix a bug IE where
+	mousing mousing off a the text node of MenuItem instance's
+	text label, or help text without the mouse actually exiting the
+	boundaries of the MenuItem instance will result in the losing
+	the background color applied when it is selected.
+*/
+#filemenu.visible .yuimenuitemlabel,
+#editmenu.visible .yuimenuitemlabel {
+	*zoom: 1;
+}
+/*
+	Remove "hasLayout" from the submenu of the file menu.
+*/
+#filemenu.visible .yuimenu .yuimenuitemlabel {
+	*zoom: normal;
+}

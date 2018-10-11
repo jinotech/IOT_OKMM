@@ -1,0 +1,54 @@
+.jpopover-container {
+	pointer-events: none;
+}
+
+.jpopover-container > div {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.975;
+	pointer-events: none;
+}
+
+.jpopover-container > div.active {
+	display: block;
+}
+
+.jpopover-container > div > .jpopover{
+	min-width: 30px;
+	min-height: 19px;
+	font-size: 13px;
+	line-height: 1.2rem;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 5px;
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    pointer-events: auto !important;
+}
+
+.jpopover-container > div > .jpopover > .jpopover-body {
+	overflow: hidden;
+}
+
+.jpopover-container > div[data-placement="left"] > .jpopover{
+	right: 100%;
+}
+
+.jpopover-container > div[data-placement="left"] > .jpopover .jpopover-text{
+	text-align: right;
+}
+
+.jpopover-container > div[data-has-hyperlink="true"] > .jpopover .jpopover-hyperlink{
+	display: inline-block;
+	position: absolute;
+	top: calc(50% - 9px);
+	right: 2px;
+}
+.jpopover-container > div[data-has-hyperlink="true"] > .jpopover .jpopover-body{
+	padding-right: 15px;
+}
+.jpopover-container > div[data-has-hyperlink="true"] > .jpopover .jpopover-text{
+	padding-right: 15px;
+}

@@ -1,0 +1,246 @@
+/*
+----------------------------------------------------------------------------------
+	BlackLabel
+----------------------------------------------------------------------------------
+*/
+
+.BlackLabelfade {
+	position: absolute;
+	/*background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
+	background:#cccccc;
+}
+
+div.BlackLabel .slidecontent {
+
+	padding-left:0px;
+	float:left;
+}
+
+div.BlackLabel .subject{
+	margin-top: 10px;
+}
+
+div.BlackLabel .subject strong{	
+}
+
+div.BlackLabel .title {
+	color:#ffffff;
+	font-size:0.8em;
+	/* letter-spacing:-0.1em; */
+	margin:0 auto 40px auto;
+	/* nvhoang */
+	letter-spacing: 0;
+}
+
+div.BlackLabel .title a,
+div.BlackLabel .title a:hover {
+	color: #ffffff;
+}
+
+/*
+ * SLIDE STEP STYLES
+ *
+ * inspired by: http://html5slides.googlecode.com/svn/trunk/styles.css
+ *
+ * ;)
+ */
+div.BlackLabel .slide {
+    display: block;
+    width: 900px;
+    height: 700px;
+
+    padding: 40px 60px;
+    
+	/*border-radius: 20px;*/
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+ 	background:url(topbg.png) repeat-x #fefefe;
+	box-shadow: 2px 2px 5px #999;
+    
+    font-family: 'NanumGothicWeb','malgun Gothic', Arial, sans-serif;
+
+    color: #888888;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    line-height: 0.7em;
+
+    letter-spacing: -1px;
+
+}
+
+div.BlackLabel .slide div {
+	padding-left:7px;	
+}
+
+div.BlackLabel .slide div strong {
+    white-space: nowrap;
+}
+
+/* COMMON STEP STYLES */
+
+div.BlackLabel .step {
+    width: 900px;
+    padding:30px 40px 40px 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    /*font-family: 'PT Serif', georgia, serif;*/
+
+    font-size: 48px;
+    line-height: 0.9em;
+}
+
+/* fade out inactive slides */
+
+div.BlackLabel .step {
+    -webkit-transition: opacity 2s;
+    -moz-transition:    opacity 2s;
+    -ms-transition:     opacity 2s;
+    -o-transition:      opacity 2s;
+    transition:         opacity 2s;
+}
+
+div.BlackLabel .step:not(.active) {
+    opacity: 0.0;
+}
+
+div.BlackLabel .slide_image_1,.slide_image_2,.slide_image_3,.slide_image_4{
+	width:600px;
+	height:400px;
+	margin-left:100px;
+	box-shadow:2px 2px 5px #999999;
+}
+
+div.BlackLabel .slide_foreignobj_2 iframe{
+	width:600px;
+	height:400px;
+	background:#17bfc9;
+	margin-left:100px;
+}
+
+div.BlackLabel .slide_sentence_1{	
+	font-size:50px;
+	text-align:center;
+	width:760px;
+	padding-top: 100px;
+	padding-bottom: 20px;	
+	letter-spacing: 0;
+}
+.slide_sentence_1 a{
+	text-decoration:underline;
+	color: blue; /*#4b89a9*/
+}
+
+.slide_sentence_1 a:hover{
+	color: cornflowerblue; /*#17a2c4*/
+}
+
+div.BlackLabel .slide_sentence_2{
+	color: blue; /*#4b89a9*/
+	font-weight:bold;
+	margin-top: 20px;
+	margin-left:10px;	
+	background: url(bullet.png) no-repeat 0 16px;
+	font-size:30px;
+	/* letter-spacing:-0.05em; */
+	text-decoration:none;
+	/* nvhoang */
+	letter-spacing: 0;
+	padding-left: 25px !important;
+
+}
+.slide_sentence_2 a{
+	text-decoration:underline;
+	color: blue; /*#4b89a9*/
+}
+
+.slide_sentence_2 a:hover{
+	color: cornflowerblue; /*#17a2c4*/
+}
+
+
+div.BlackLabel .slide_sentence_3{
+	color:#999999;
+	margin-left:50px;
+	font-size:0.5em;
+	background: url(bullet2.png) no-repeat 0 17px;
+	text-decoration:none;
+	/* nvhoang */
+	padding-left: 20px !important;
+	letter-spacing: 0;
+}
+
+.slide_sentence_3 a{
+	text-decoration:underline;
+	color:#999999;
+}
+
+.slide_sentence_3 a:hover{
+	color:#aaa;
+}
+
+div.BlackLabel .slide_sentence_4{
+	color:#999999;
+	margin-left:100px;
+	font-size:0.5em;
+	background: url(bullet3.png) no-repeat 0 18px;
+	text-decoration:none;
+	/* nvhoang */
+	padding-left: 20px !important;
+	letter-spacing: 0;
+}
+
+.slide_sentence_4 a{
+	text-decoration:underline;
+	color:#999999;
+}
+
+.slide_sentence_4 a:hover{
+	color:#aaa;
+}
+
+#BlackLabel .cell {
+	background-color: #4B89A9;
+	opacity: 0.8;
+	margin-left: -1.2em;
+	width:50px;
+	height:70px;
+	float: left;
+	box-shadow: 2px 2px 3px #333;
+}
+
+.slide-start{
+	/* font-size:100px; */
+	text-align:center;
+	width:760px;
+	/* letter-spacing:-0.03em; */
+	color: blue; /*#4b89a9*/
+		text-shadow:
+		0px -1px 1px #333,
+		0px 1px 0px rgba(255,255,255,0.3);
+	line-height:100%;
+	
+	position: absolute;
+	top: 50%;
+	height: 200px;
+	margin-top: -100px;
+	/* nvhoang */
+	font-size: 66px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 1.0625;
+}
+.slide-end{
+	font-size:50px;
+	text-align:center;
+	width:760px;
+	padding:260px 0;	
+}

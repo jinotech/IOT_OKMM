@@ -1,0 +1,76 @@
+{
+	"address" : "Địa chỉ",
+	
+	"button_apply" : "Áp dụng",
+	"bg_color" : "Màu nền",
+	
+	"chatting_expanding" : "Mở rộng",
+	"chatting" : "Trò chuyện",
+	"create_node_text" : "Tạo nút bằng văn bản",
+	"create_node_xml" : "Tạo nút bằng xml",
+	
+	"export_text" : "Xuất khẩu văn bản",
+	
+    "facebook_locale" : "en_US",
+    "find" : "Tìm kiếm",
+	
+	"google_search" : "Tim kiếm bằng Google",
+	"google_autosearch" : "Tìm kiếm",
+	"google_cse" : "Máy tìm kiếm Google",
+	
+	"height" : "Chiều cao",
+	"hyperlink_delete" : "Xoá",
+	
+	"iframe" : "Khung",
+	"iframe_delete" : "Xoá khung",
+	"import_text" : "Nhập khẩu văn bản",
+	"import_xml" : "Nhập khẩu Xml",
+	"insert_image" : "Chèn hình",
+	"ignore_case" : "Bỏ qua trường hợp",
+	
+    "language" : "Tiếng Anh",
+	"loadChatMessage" :"Đang tải thông điệp...",
+	
+	"margin_left" : "X",
+	"margin_top" : "Y",
+	"menu_edit_hyperlink" : "Siêu liên kết",
+	
+	"no": "Không",
+	"node_structure" : "Cấu trúc nút", 
+    "notice_button_ok" : "OK",
+    "notice_button_skip" : "Bỏ qua hội thoại này cho hôm nay",
+    "notice_message" : "Thông điệp",
+    "notice_title" : "Chú ý",
+    
+    "okm_notice_title" : "Cập nhật",
+    "okm_notice_button_close" : "Đừng mở cho tới cập nhật tiếp theo",
+    
+    "qr_code" : "Mã QR",
+
+	"scrolling": "Cuộn",
+	"send" : "Gởi",
+	"search" : "Tìm kiếm",
+	
+	"text_color" : "Màu văn bản",  
+
+	"width" : "Độ rộng",
+	"whole_word" : "Cả từ",
+
+	"yes": "Đúng",
+	
+	"restrict_editing" : "Bạn không thể chỉnh sửa.",
+	
+	"webpage" : "Trang web",
+	"lti"  : "Kết nối LTI",
+	"webpage_delete" : "Xoá trang web",
+	"toolbar_toggle" : "Hiện/ẩn các thanh công cụ",
+	"zoom" : "Zoom",
+	
+	"launch_url": "Địa chỉ URL",
+	"secret_value" : "Chuỗi bí mật",
+	"key_value" : "Giá trị khoá",
+	
+	"menu_edit_text_on_branch" : "Chữ trên nhánh"
+	
+	
+}

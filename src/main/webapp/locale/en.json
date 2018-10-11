@@ -1,0 +1,74 @@
+{
+	"address" : "Address",
+	
+	"button_apply" : "Apply",
+	"bg_color" : "Background Color",
+	
+	"chatting_expanding" : "Expansion",
+	"chatting" : "Chatting",
+	"create_node_text" : "Create node by text",
+	"create_node_xml" : "Create node by xml",
+	
+	"export_text" : "Export Text",
+	
+    "facebook_locale" : "en_US",
+    "find" : "Find",
+	
+	"google_search" : "Google Search",
+	"google_autosearch" : "Search",
+	"google_cse" : "Google Search Engine",
+	
+	"height" : "Height",
+	"hyperlink_delete" : "Delete",
+	
+	"iframe" : "Iframe",
+	"iframe_delete" : "Iframe Delete",
+	"import_text" : "Import Text",
+	"import_xml" : "Import Xml",
+	"insert_image" : "Insert Image",
+	"ignore_case" : "Ignore Case",
+	
+    "language" : "US English",
+	"loadChatMessage" :"Load Messages...",
+	
+	"margin_left": "X",
+	"margin_top": "Y",
+	"menu_edit_hyperlink" : "Hyperlink",
+	
+	"no": "No ",
+	"node_structure" : "Structure of node", 
+    "notice_button_ok" : "OK",
+    "notice_button_skip" : "Skip this dialog for today",
+    "notice_message" : "Message",
+    "notice_title" : "Notice",
+    
+    "okm_notice_title" : "Update",
+    "okm_notice_button_close" : "Do not open until the next update",
+    
+    "qr_code" : "QR Code",
+
+	"scrolling": "Scroll",
+	"send" : "Send",
+	"search" : "Search",
+	
+	"text_color" : "Text Color",  
+
+	"width" : "Width",
+	"whole_word" : "Whole Word",
+
+	"yes": "Yes ",
+	
+	"restrict_editing": "You can not edit.",
+	
+	"webpage" : "Webpage",
+	"lti"  : "LTI Connection",
+	"webpage_delete" : "Delete Webpage",
+	"toolbar_toggle" : "Show/hide toolbars",
+	"zoom" : "Zoom",
+	
+	"launch_url": "Launch URL",
+	"secret_value" : "Secret value",
+	"key_value" : "Key value",
+	
+	"menu_edit_text_on_branch" : "Text on Branch"
+}

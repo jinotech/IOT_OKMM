@@ -1,0 +1,388 @@
+html {
+	-webkit-text-size-adjust: none;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+/*------------------------------Chat---------------------------------*/
+#openpanel {
+	position: fixed;
+	top: 50px;
+	right: 0;
+	width: 208px;
+	height: 15px;
+	z-index: 1;
+	border: 1px solid #CCC;
+	background: url(../images/dialog_title.png) repeat-x top #FEFEFE;
+	padding: 10px 10px 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: "NanumGothicBolder", Malgun Gothic, sans-serif;
+	color: #3A7EA2;
+	font-weight: bold;
+}
+
+#openpanel div {
+	width: 10px;
+	position: absolute;
+	top: 8px;
+	right: 13px;
+}
+
+#openpanel div a {
+	color: #666;
+}
+
+#rightpanel-wrap {
+	position:absolute;
+	top: 45px;
+	right: 0px; 
+}
+div#rightpanel {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	height: 0px;
+	width: 250px;
+	border: none;
+}
+
+#rightexpandpanel {
+	height: 100%
+}
+
+#bottom {
+	z-index: 1000;
+}
+
+.copyright_logo {
+	padding-top: 5px
+}
+
+#statcounter div {
+	padding-right: 15px;
+}
+
+#okm-chat {
+	/*overflow: auto;*/
+	border: 1px solid #ccc;
+	border-top:none;
+
+}
+
+#titlepanel {
+	background: url(../images/dialog_title.png) repeat-x top #FEFEFE;
+	padding: 8px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: "NanumGothicBolder", Malgun Gothic, sans-serif;
+	color: #3A7EA2;
+	font-weight: bold;
+	height: 16px;
+}
+
+#people {
+	padding-left: 25px;
+	background: url(../images/chat_icon.png) no-repeat 0 -24px;}
+
+.close_btn {
+	border: none;
+	width: 30px;
+	height: 30px;
+	background: url(../images/open_close_btn.png) no-repeat 0 -30px;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 250px;
+	opacity: 0.5;
+}
+
+.close_btn:hover {
+	opacity: 1.0
+}
+
+#chatlog {
+	height: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    background: #e5ecf4;
+    border-top: 1px solid #c9d0e2;
+}
+
+#chatlog .user_name {
+ margin:5px 0;
+ padding:7px;
+}
+#chatlog  .user_name .user_messages {
+	margin: 5px 0 5px 90px;
+	font-size: 12px;
+	padding: 7px;
+	background: #17a2c4;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#17bfc9),	to(#17a2c4) );
+	background: -moz-linear-gradient(#17bfc9, #17a2c4);
+	background: -o-linear-gradient(#17bfc9, #17a2c4);
+	background: linear-gradient(#17bfc9, #17a2c4);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float:right;
+}
+
+
+#chatlog .user_name_others{
+	font-size: 12px;
+	margin: 5px 0;
+	color: #666;
+	padding:10px;
+}
+
+#chatlog .user_name_others strong{
+	font-size: 11px;
+	color: #666;
+	float:left;
+	width:200px;
+
+}
+
+#chatlog .user_name_others .user_messages{
+	margin:0 90px 5px 0;
+	font-size: 12px;
+	padding: 7px;
+	background: #f79d00;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fcd17e),	to(#f79d00) );
+	background: -moz-linear-gradient(#fcd17e, #f79d00);
+	background: -o-linear-gradient(#fcd17e, #f79d00);
+	background: linear-gradient(#fcd17e, #f79d00);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float:left;
+}
+
+
+
+#chatpanel {
+	border: none
+}
+
+#chatlog .user_messages {
+	color: #fefefe;
+}
+
+.input_text_bar {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-top: 1px solid #dedede;
+	background-image: linear-gradient(bottom, rgb(224, 224, 224) 44%,
+		rgb(240, 240, 240) 72% );
+	background-image: -o-linear-gradient(bottom, rgb(224, 224, 224) 44%,
+		rgb(240, 240, 240) 72% );
+	background-image: -moz-linear-gradient(bottom, rgb(224, 224, 224) 44%,
+		rgb(240, 240, 240) 72% );
+	background-image: -webkit-linear-gradient(bottom, rgb(224, 224, 224) 44%,
+		rgb(240, 240, 240) 72% );
+	background-image: -ms-linear-gradient(bottom, rgb(224, 224, 224) 44%,
+		rgb(240, 240, 240) 72% );
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(224
+		, 224, 224) ), color-stop(0.72, rgb(240, 240, 240) ) );
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e0e0e0,
+		endColorstr=#f0f0f0 );
+	/* For Internet Explorer 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#e0e0e0, endColorstr=#f0f0f0)";
+	background-color: #CCC;
+	position:absolute;
+	bottom:0px;
+	width:250px;
+}
+
+#username {
+	width: 50px;
+	height: 20px;
+	margin: 0 3px;
+	font-family: "NanumGothic", Malgun Gothic, sans-serif;
+	font-size: 12px;
+	background: transparent;
+	border: none;
+	text-align: center;
+	display:none;
+}
+
+input#text {
+	font-family: "NanumGothic", Malgun Gothic, sans-serif;
+	width: 170px;
+	height: 15px;
+	padding: 1px;
+	border: 1px solid #cccccc;
+	font-size: 12px;
+	margin-left:10px;
+}
+
+input[type="button"].send_btn {
+	background: #222 url(../images/overlay.png) repeat-x;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	border-bottom: 1px solid #222;
+	position: relative;
+	background-color: #2DAEBF;
+	font-size: 11px;
+	color: white;
+	padding: 4px 6px;
+	border-radius: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	float: right;
+	border: none;
+	cursor: pointer;
+	margin: 0 10px 0 5px;
+}
+
+input[type="button"].send_btn:hover {
+	opacity: 0.8;
+}
+
+/*------------------------------Adsense---------------------------------*/
+#okm-adsense {
+	/*overflow: auto;*/
+	border: 1px solid #CCC;
+	background : rgba(444, 444, 444, 0.8);
+	/* Initial/min/max height for this pane
+	height: 100px;
+	min-height: 50px;
+	max-height: 200px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #ffffff;
+	 */
+	/* No margin or border allowed */
+}
+
+#adsensepanel {
+	height: 100%
+}
+
+#adsensepanel #titlepanel2 {
+	background: url(../images/dialog_title.png) repeat-x top #FEFEFE;
+	padding: 8px 10px 7px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: "NanumGothicBolder", Malgun Gothic, sans-serif;
+	color: #3A7EA2;
+	font-weight: bold;
+	position: fixed;
+	top: 47px;
+	width: 280px;
+	height: 17px;}
+
+#adsensepanel #result {
+	padding-left: 20px;
+	background: url(../images/chat_icon.png) no-repeat 0 -1px;
+}
+
+#adsensepanel #auto_search {
+	font-family: "NanumGothic", Malgun Gothic, sans-serif;
+	font-size: 11px;
+	font-weight: 100;
+	position: absolute;
+	right: 30px;
+}
+
+#auto_search #autosearch {
+	vertical-align: top;
+	padding-left: 5px;
+}
+
+div.cse-branding-bottom {
+	border-bottom: 1px solid #ccc;
+	background-image: linear-gradient(bottom, #E0E0E0 44%, #F0F0F0 72%);
+	background-image: -o-linear-gradient(bottom, #E0E0E0 44%, #F0F0F0 72%);
+	background-image: -moz-linear-gradient(bottom, #E0E0E0 44%, #F0F0F0 72%);
+	background-image: -webkit-linear-gradient(bottom, #E0E0E0 44%, #F0F0F0 72%);
+	background-image: -ms-linear-gradient(bottom, #E0E0E0 44%, #F0F0F0 72%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #E0E0E0
+		), color-stop(0.72, #F0F0F0) );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e0e0e0,
+		endColorstr=#f0f0f0 );
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#e0e0e0, endColorstr=#f0f0f0)";
+	background-color: #CCC;
+	padding: 10px;
+	position: fixed;
+	top: 80px;
+	width: 280px;
+}
+
+#googleiframe {
+	font-family: "NanumGothic", Malgun Gothic, sans-serif;
+	overflow-y: scroll;
+	background-color: rgba(444, 444, 444, 0.9);
+	padding: 10px;
+	width: 250px;
+	border: none;
+	height:100%;
+	padding-top:100px;
+}
+
+input[type="text"]#search-text {
+	height: 17px;
+	width: 225px;
+	border-radius:0px;
+}
+
+input[type="submit"]#adsense_search {
+	background: #222 url(../images/overlay.png) repeat-x;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	border-bottom: 1px solid #222;
+	position: relative;
+	background-color: #2DAEBF;
+	font-size: 11px;
+	color: white;
+	padding: 4px 8px;
+	border-radius: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	float: right;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]#adsense_search:hover {
+	opacity: 0.8;
+}
+
+div.cse-branding-text {
+	font-size: 11px;
+	font-family: "NanumGothic", Malgun Gothic, sans-serif;
+}
+
+#text_search {
+	position : absolute;
+	border-left : 1px solid #ddd;
+	top : 0px;
+	left : 0px;
+	width : 300px;
+	height : 100%;
+	background-color : #f2f4f8;
+}
+
+#text_search iframe {
+	width : 300px;
+	height : 100%;
+	padding: 0px; 
+	margin: 0px; 
+	background-color: #f2f4f8; 
+	z-index:0;
+		
+}
+	

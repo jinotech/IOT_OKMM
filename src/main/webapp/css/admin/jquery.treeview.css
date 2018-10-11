@@ -1,0 +1,93 @@
+body{
+	background:#ededed;
+	margin:0;
+}
+
+.treeview, .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.treeview ul {
+	margin-top: 4px;
+}
+
+.treeview .hitarea {
+	/*background: url(../../images/admin/jquery.treeview/treeview-default.gif) -64px -25px no-repeat;*/
+	height: 26px;
+	width: 20px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+	background: url(../../images/admin/jquery.treeview/foldericon1.png) 7px 5px no-repeat #dedede;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: #008EE8; cursor: pointer; }
+
+.treeview li { background:/* url(../../images/admin/jquery.treeview/treeview-default-line.gif) */ 0 0 no-repeat; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+
+li.expandable, .collapsable.lastCollapsable{
+}
+
+.treeview .expandable-hitarea { background: url(../../images/admin/jquery.treeview/foldericon2.png) 7px 5px no-repeat #dedede; }
+
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(../../images/admin/jquery.treeview/treeview-default.gif); }  
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea {}
+
+.treeview-red li { background-image: url(../../images/admin/jquery.treeview/treeview-red-line.gif); }
+.treeview-red .hitarea, .treeview-red li.lastCollapsable, .treeview-red li.lastExpandable { background-image: url(../../images/admin/jquery.treeview/treeview-red.gif); } 
+
+.treeview-black li { background-image: url(../../images/admin/jquery.treeview/treeview-black-line.gif); }
+.treeview-black .hitarea, .treeview-black li.lastCollapsable, .treeview-black li.lastExpandable { background-image: url(../../images/admin/jquery.treeview/treeview-black.gif); }  
+
+.treeview-gray li { background-image: url(../../images/admin/jquery.treeview/treeview-gray-line.gif); }
+.treeview-gray .hitarea, .treeview-gray li.lastCollapsable, .treeview-gray li.lastExpandable { background-image: url(../../images/admin/jquery.treeview/treeview-gray.gif); } 
+
+.treeview-famfamfam li { background-image: url(../../images/admin/jquery.treeview/treeview-famfamfam-line.gif); }
+.treeview-famfamfam .hitarea, .treeview-famfamfam li.lastCollapsable, .treeview-famfamfam li.lastExpandable { background-image: url(../../images/admin/jquery.treeview/treeview-famfamfam.gif); } 
+
+.treeview .placeholder {
+	background: url(../../images/admin/jquery.treeview/ajax-loader.gif) 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+
+.admintree li { padding: 3px 0 2px 12px; }
+.admintree span.folder, .admintree span.item { padding: 1px 0 1px 16px; display: block; }
+.admintree a.folder, .admintree a.item { padding: 1px 0 1px 16px; display: block; }
+.admintree span.folder { background: url(../../images/admin/jquery.treeview/folder.gif) 0 0 no-repeat; }
+.admintree a.folder { background: /*url(../../images/admin/jquery.treeview/folder.gif) 0 5px no-repeat */#DEDEDE;font-weight:600; padding: 5px 0 5px 10px;border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;}
+.admintree li.expandable span.folder { background: url(../../images/admin/jquery.treeview/folder-closed.gif) 0 0 no-repeat; }
+.admintree li.expandable a.folder { background: /*url(../../images/admin/jquery.treeview/folder-closed.gif) 0 5px no-repeat*/ #DEDEDE;padding: 5px 0 5px 10px;}
+.admintree span.item { background: url(../../images/admin/jquery.treeview/file.gif) 0 0 no-repeat; }
+.admintree span.item { cursor: pointer; }
+.admintree a.item { background: url(../../images/admin/jquery.treeview/article.png) 0 0 no-repeat; font-size:12px; }
+.admintree a.item { cursor: pointer; }
+
+
+

@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Ribbon Test</title>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"><!-- urf8 한글 보이게하기 -->
+	
+	<link href="ribbon/ribbon.css" rel="stylesheet" type="text/css" />
+	<link href="ribbon/soft_button.css" rel="stylesheet" type="text/css" />
+	<link href="ribbon/user.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="ribbon/ribbon.js"></script>
+	<script type="text/javascript" src="ribbon/jquery.tooltip.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#ribbon').ribbon();
+			
+			$('#enable-btn').click(function() {
+				$('#del-table-btn').enable();
+				$('#del-page-btn').enable();
+				$('#copy').enable();
+				$('#other-btn-2').enable();
+				
+				$('#enable-btn').hide();
+				$('#disable-btn').show();	
+			});
+			$('#disable-btn').click(function() {
+				$('#del-table-btn').disable();
+				$('#del-page-btn').disable();
+				$('#copy').disable();
+				$('#other-btn-2').disable();
+				
+				$('#disable-btn').hide();
+				$('#enable-btn').show();	
+			});
+			
+			$('.ribbon-button').click(function() {
+				var ind = $('.sel').index();
+				if (this.isEnabled()) {
+					if($(this).attr('id')=='folding-RB'){		// wonho 
+						if($(this).attr('folding-stat')==1){
+							$('#top .okm-sns').css('top',80);
+							$('#ribbon .ribbon-tab').slideUp();		
+						//	$('#ribbon #'+"format-tab").slideUp();	// wonho 추가 
+						//	$('#ribbon #'+"next-tab").slideUp();	// wonho 추가 
+							$(this).attr('folding-stat',0);
+                            $('#folding-RB').css('-webkit-transform', 'rotate(180deg)').css('-moz-transform','rotate(180deg)'); //Folding,unfolding button img change
+						}else{
+						//	alert(ind);
+							$('#ribbon .ribbon-tab').hide();
+						//	$('#ribbon #ribbon-tab$('.sel').index()]).slideDown();	//wonho-show()를 slideDown으로 바꿈
+							$('#top .okm-sns').css('top',180);
+							$('#ribbon #ribbon-tab-'+ind).slideDown();				
+                            $('#folding-RB').css('-webkit-transform', 'rotate(0deg)').css('-moz-transform','rotate(0deg)'); //Folding,unfolding button img change
+							$(this).attr('folding-stat',1);
+						}
+					}else{
+						// wonho 추가 
+						
+						var action = $(this).attr('id');
+						alert(action + ' clicked'); // wonho 실행 스크립트와 연결
+						if(action == "open") {
+							//openMap();
+							alert("open map");
+						}
+						
+					}
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div id="ribbon">
+		<div class="ribbon-window-title">
+		<h1 class="logo"><img src="ribbonicons/toplogo.png" /></h1>
+		<span class="maptitle">맵 제목</span>
+		<div class="topright">
+
+				<div id='cssmenu'>
+					<ul>
+						<li class='has-sub '><a href='#'><span>chj8750 님</span></a>
+							<ul>
+								<li class='has-sub'><a href='#' class="1st"><span>로그아웃</span></a></li>
+								<li class='has-sub'><a href='#' class="2nd"><span>내 정보수정</span></a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+				<select class="lang">
+				<option value="1">한국어</option>
+				<option value="2">ENG</option>
+				<option value="3">日本語</option>
+			</select>
+			
+		</div>
+		</div>
+
+
+
+        
+        	<!-- --파일-- -->
+		<div class="ribbon-tab" id="ribbon-tab-0">
+			<span class="ribbon-title">파일</span>
+			
+		<!-- -파일(섹션)- -->
+			<div class="ribbon-section">
+				<span class="section-title">파일</span><!-- -박스 타이틀- -->
+				
+				<div class="ribbon-button ribbon-button-large" id="newmap">
+					<span class="button-title">새 마인드맵</span><!-- -아이콘이름- -->
+					<span class="button-help">새 마인드맵을 생성합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_new.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_new.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_new.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="openmap">
+					<span class="button-title">열기</span><!-- -아이콘이름- -->
+					<span class="button-help">마인드맵을 엽니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_file.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_file.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_file.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="savemap">
+					<span class="button-title">저장</span><!-- -아이콘이름- -->
+					<span class="button-help">마인드맵을 저장합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_save.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_save.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_save.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="saveasmap">
+					<span class="button-title">다른 이름으로 저장</span><!-- -아이콘이름- -->
+					<span class="button-help">마인드맵을 다른 이름으로 저장합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_saveas.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_saveas.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_saveas.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="timelinemode">
+					<span class="button-title">타임라인</span><!-- -아이콘이름- -->
+					<span class="button-help">마인드맵을 저장한 타임라인을 엽니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_timeline.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_timeline.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_timeline.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- -파일(섹션)끝-- -->
+			
+			<!-- --설정-- -->
+			<div class="ribbon-section">
+				<span class="section-title">설정</span><!-- -박스 타이틀- -->
+				
+				<div class="ribbon-button ribbon-button-large" id="splimap">
+					<span class="button-title">새 맵으로 분리</span><!-- -아이콘이름- -->
+					<span class="button-help">선택된 마디를 새 맵으로 분리합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_separate.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_separate.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_separate.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="delmap">
+					<span class="button-title">맵 삭제</span><!-- -아이콘이름- -->
+					<span class="button-help">맵을 삭제합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_del.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_del.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_del.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="changemapname">
+					<span class="button-title">맵 이름 바꾸기</span><!-- -아이콘이름- -->
+					<span class="button-help">맵 이름을 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_name.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_name.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_name.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="okmPreference">
+					<span class="button-title">설정</span><!-- -아이콘이름- -->
+					<span class="button-help">맵 옵션을 변경/설정합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/file_setting.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/file_setting.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/file_setting.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+			</div>
+			<!-- -설정끝-- -->
+		</div>
+        <!-- ---------파일끝----------- -->
+        
+        
+
+<!-- ---------편집----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-1">
+			<span class="ribbon-title">편집</span>
+			
+			<!-- --마디추가-- -->
+			<div class="ribbon-section">
+				<span class="section-title">마디추가</span><!-- -박스 타이틀- -->
+				<div class="ribbon-button ribbon-button-large" id="insert">
+					<span class="button-title">자식마디<br/>추가</span><!-- -아이콘이름- -->
+					<span class="button-help">자식마디를 추가합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_childnode.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_childnode.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_childnode.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="insertsibling">
+					<span class="button-title">형제마디<br/>추가</span><!-- -아이콘이름- -->
+					<span class="button-help">형제마디를 추가합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_bronode.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_bronode.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_bronode.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- --마디추가끝-- -->
+			
+			<!-- --삽입변경-- -->
+			<div class="ribbon-section">
+				<span class="section-title">삽입/변경</span><!-- -박스 타이틀- -->
+				<div class="ribbon-button ribbon-button-large" id="imageprovider">
+					<span class="button-title">이미지</span><!-- -아이콘이름- -->
+					<span class="button-help">이미지를 삽입하거나 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_image.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_image.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_image.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="videoprovider">
+					<span class="button-title">비디오</span><!-- -아이콘이름- -->
+					<span class="button-help">비디오를 삽입하거나 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_video.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_video.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_video.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="inserthyper">
+					<span class="button-title">하이퍼링크</span><!-- -아이콘이름- -->
+					<span class="button-help">하이퍼링크를 삽입하거나 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_link.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_link.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_link.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="insertiframe">
+					<span class="button-title">아이프레임</span><!-- -아이콘이름- -->
+					<span class="button-help">아이프레임을 삽입하거나 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_iframe.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_iframe.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_iframe.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				<!-- KHANG -->
+				<div class="ribbon-button ribbon-button-large" id="insertwebpage">
+					<span class="button-title">아이프레임</span><!-- -아이콘이름- -->
+					<span class="button-help">아이프레임을 삽입하거나 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_iframe.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_iframe.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_iframe.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				<div class="ribbon-button ribbon-button-large" id="insertmoodle">
+					<span class="button-title">아이프레임</span><!-- -아이콘이름- -->
+					<span class="button-help">아이프레임을 삽입하거나 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_iframe.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_iframe.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_iframe.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				<!-- KHANG -->
+			</div>
+			<!-- -삽입변경끝-- -->
+			
+			<!-- --편집-- -->
+			<div class="ribbon-section">
+				<span class="section-title">편집</span><!-- -박스 타이틀- -->
+				<div class="ribbon-button ribbon-button-large" id="nodetextcolor">
+					<span class="button-title">글자색상</span><!-- -아이콘이름- -->
+					<span class="button-help">글자색을 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_fontcolor.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_fontcolor.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_fontcolor.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="nodebgcolor">
+					<span class="button-title">배경색상</span><!-- -아이콘이름- -->
+					<span class="button-help">마디 배경색을 변경합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_color.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_color.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_color.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="foldingaction">
+					<span class="button-title">맵접기/펴기</span><!-- -아이콘이름- -->
+					<span class="button-help">마디를 접거나 폅니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_expand.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_expand.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_expand.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- -편집끝-- -->
+	
+			<!-- -클립보드- -->
+			<div class="ribbon-section">
+				<span class="section-title">클립보드</span>
+				
+				<div class="left_sml"><!-- -작은아이콘 왼쪽정렬- -->
+				<div class="ribbon-button ribbon-button-small" id="editnode">
+					<span class="button-title">마디수정</span><!-- -아이콘이름- -->
+					<span class="button-help">마디내용을 편집합니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_editnode.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_editnode.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_editnode.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small" id="cut">
+					<span class="button-title">잘라내기</span>
+					<span class="button-help">마디를 잘라냅니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_cut.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_cut.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_cut.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="copy">
+					<span class="button-title">복사</span>
+					<span class="button-help">마디를 복사합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_copy.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_copy.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_copy.png" />
+				</div>
+				</div>
+				
+				<div class="left_sml"><!-- -작은아이콘 왼쪽정렬- -->
+				<div class="ribbon-button ribbon-button-small" id="paste">
+					<span class="button-title">붙여넣기</span><!-- -아이콘이름- -->
+					<span class="button-help">마디를 붙여 넣습니다.</span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_paste.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_paste.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_paste.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small" id="delete">
+					<span class="button-title">마디삭제</span>
+					<span class="button-help">마디를 삭제합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_delete.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_delete.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_delete.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="nodecolormix">
+					<span class="button-title">전체마디색변경</span>
+					<span class="button-help">전체마디색을 변경합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_changecolor.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_changecolor.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_changecolor.png" />
+				</div>
+				</div>
+				
+			</div>
+			<!-- -클립보드끝- -->
+		</div>
+<!-- ---------편집끝----------- -->
+
+
+
+<!-- ---------공유----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-2">
+			<span class="ribbon-title">공유</span>
+			
+			<!-- ---그룹--- -->
+			<div class="ribbon-section">			
+				<span class="section-title">그룹</span>
+				<div class="ribbon-button ribbon-button-large" id="groupmanage">
+					<span class="button-title">그룹관리</span>
+					<span class="button-help">그룹을 관리합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_group.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_group.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_group.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="shareManage">
+					<span class="button-title">공유설정</span>
+					<span class="button-help">공유설정합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_share.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_share.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_share.png" />
+				</div>
+			</div>
+			<!-- ---그룹끝--- -->
+			
+			<!-- -임베드-- -->
+			<div class="ribbon-section">
+				<span class="section-title">임베드</span>
+				<div class="ribbon-button ribbon-button-large" id="">
+					<span class="button-title">EMBED</span>
+					<span class="button-help">맵을 임베드합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_embed.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_embed.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_embed.png" />
+				</div>
+			</div>
+			<!-- -임베드끝-- -->
+			
+			<!-- ---변환--- -->
+			<div class="ribbon-section">			
+				<span class="section-title">변환</span>
+				<div class="ribbon-button ribbon-button-large" id="">
+					<span class="button-title">파일변환</span>
+					<span class="button-help">맵을 파일로 변환합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_file.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_file.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_file.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="">
+					<span class="button-title">클립보드 변환</span>
+					<span class="button-help">맵을 클립보드로 변환합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_clipboard.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_clipboard.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_clipboard.png" />
+				</div>
+			</div>
+			<!-- ---변환끝--- -->
+			
+			<!-- ---공유--- -->
+			<div class="ribbon-section">			
+				<span class="section-title">공유</span>
+				<div class="ribbon-button ribbon-button-large" id=" facebookgetfeed">
+					<span class="button-title">페이스북</span>
+					<span class="button-help">페이스북에 공유합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_facebook.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_facebook.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_facebook.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="twitterfeed">
+					<span class="button-title">트위터</span>
+					<span class="button-help">트위터에 공유합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_twitter.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_twitter.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_twitter.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="delicious">
+					<span class="button-title">딜리셔스</span>
+					<span class="button-help">딜리셔스에 공유합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/share_delicious.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/share_delicious.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/share_delicious.png" />
+				</div>
+			</div>
+			<!-- ---공유끝--- -->
+	
+		</div>
+<!-- ---------공유끝----------- -->
+		
+	
+<!-- ---------보기----------- -->	
+		<div class="ribbon-tab" id="ribbon-tab-3">
+			<span class="ribbon-title">보기</span>
+			
+			<!-- -프레젠테이션- -->
+			<div class="ribbon-section">
+				<span class="section-title">프레젠테이션</span>
+				
+				<div class="ribbon-button ribbon-button-large" id="">
+					<span class="button-title">쇼보기</span>
+					<span class="button-help">프레젠테이션을 시작합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_show.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_show.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_show.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="presentationedit">
+					<span class="button-title">편집</span>
+					<span class="button-help">프레젠테이션을 편집합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_edit.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_edit.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_edit.png" />
+				</div>
+				
+			</div>
+			<!-- -프레젠테이션끝- -->
+			
+			<!-- -보기- -->
+			<div class="ribbon-section">
+				<span class="section-title">보기</span>
+				
+				<div class="ribbon-button ribbon-button-large" id="foldingall">
+					<span class="button-title">전체펴기/접기</span>
+					<span class="button-help">맵 전체를 피거나 접습니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/edit_expand.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/edit_expand.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/edit_expand.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="zoomin">
+					<span class="button-title">확대</span>
+					<span class="button-help">맵을 확대합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_plus.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_plus.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_plus.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="zoomout">
+					<span class="button-title">축소</span>
+					<span class="button-help">맵을 축소합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_minus.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_minus.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_minus.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="zoomnot">
+					<span class="button-title">실제크기</span>
+					<span class="button-help">맵의 실제크기에 맞춥니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_fit.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_fit.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_fit.png" />
+				</div>
+				
+			</div>
+			<!-- -보기끝- -->
+			
+			<!-- -맵스타일- -->
+			<div class="ribbon-section">
+				<span class="section-title">맵스타일</span>
+				
+				<div class="ribbon-button ribbon-button-large" id="tomindmap">
+					<span class="button-title">마인드맵</span>
+					<span class="button-help">맵을 마인드맵 모드로 실행합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_mindmap.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_mindmap.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_mindmap.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="totree">
+					<span class="button-title">트리맵</span>
+					<span class="button-help">맵을 트리맵 모드로 실행합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_treemap.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_treemap.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_treemap.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="tofishbone">
+					<span class="button-title">피쉬본(베타)</span>
+					<span class="button-help">맵을 피쉬본 모드로 실행합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_fishbone.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_fishbone.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_fishbone.png" />
+				</div>
+				
+			</div>
+			<!-- -맵스타일끝- -->
+			
+			<!-- -기타- -->
+			<div class="ribbon-section">
+				<span class="section-title">기타</span>
+				
+				<div class="ribbon-button ribbon-button-large">
+					<span class="button-title">채팅</span>
+					<span class="button-help">채팅창을 실행합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_chat.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_chat.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_chat.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="googlesearch">
+					<span class="button-title">Google Search</span>
+					<span class="button-help">Google Search을 실행합니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/show_google.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/show_google.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/show_google.png" />
+				</div>
+				
+			</div>
+			<!-- -기타끝- -->
+
+			
+		</div>
+	<!-- ---------보기끝----------- -->	
+
+
+<!-- ---------고객센터----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-4">
+			<span class="ribbon-title">고객센터</span>
+			<div class="ribbon-section">
+			
+				<span class="section-title">고객센터</span>
+				
+				<div class="ribbon-button ribbon-button-large" id="notice">
+					<span class="button-title">공지사항</span>
+					<span class="button-help">공지사항입니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/customer_notice.png"" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/customer_notice.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/customer_notice.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="qna">
+					<span class="button-title">Q&A</span>
+					<span class="button-help">질문과 답변입니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/customer_qna.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="howtouse">
+					<span class="button-title">사용법</span>
+					<span class="button-help">OKmindmap 사용법 입니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/customer_manual.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/customer_manual.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/customer_manual.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="aboutjinotech">
+					<span class="button-title">회사소개</span>
+					<span class="button-help">Jinotech 소개입니다.</span>
+					<img class="ribbon-icon ribbon-normal" src="ribbonicons/customer_com.png" />
+					<img class="ribbon-icon ribbon-hot" src="ribbonicons/customer_com.png" />
+					<img class="ribbon-icon ribbon-disabled" src="ribbonicons/customer_com.png" />
+				</div>
+			</div>
+		
+
+		</div>
+<!-- ---------고객센터끝----------- -->		
+
+		
+	<!--wonho- 아래의 폴딩 버튼을 위해 삽입 folding-stat은 현재 접혀있나 펼쳐있나를 알기위해 sel-tab 은 현재 탭이 두번 눌릴 경우를 알기 위해 이를 저장함-->
+	<div class="folding">
+	<div class="ribbon-button ribbon-button-small" id="folding-RB" folding-stat="1" sel-tab="-1"><img align=center src="ribbonicons/foldicon1.png" ></div>
+	</div>
+	
+	</div>
+
+</body>
+</html>

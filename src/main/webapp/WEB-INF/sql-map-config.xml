@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Common.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/ArrowLink.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Attribute.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Cloud.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Edge.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Font.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Hook.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Icon.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Map.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/MapRevision.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Node.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/Parameter.xml"/>
+	<sqlMap resource="com/okmindmap/dao/mysql/ibatis/maps/RichContent.xml"/>
+
+</sqlMapConfig>

@@ -1,0 +1,102 @@
+
+
+
+#impress { pointer-events: auto; }
+
+/* overview step */
+
+#overview {
+    z-index: -1;
+    padding: 0;
+}
+
+/* on overview step everything is visible */
+
+#impress.step-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* hint on the first slide */
+
+.hint {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+    
+    font-size: 50px;
+    padding: 20px;
+    
+    z-index: 100;
+    
+    opacity: 0;
+    
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+.step-first + .hint {
+    opacity: 1;
+    
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s;
+    transition:         opacity 1s 5s,         transform 0.5s;
+    
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+}
+
+
+/* IMPRESS NOT SUPPORTED STYLES */
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+    
+    display: none;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border-radius: 10px;
+    border: 1px solid #E4C652;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
+.impress-not-supported .step:not(.active) {
+	opacity: 1;
+}
+

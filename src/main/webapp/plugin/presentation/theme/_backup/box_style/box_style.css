@@ -1,0 +1,268 @@
+/*
+----------------------------------------------------------------------------------
+	box_style
+----------------------------------------------------------------------------------
+*/
+
+.box_stylefade {
+	position: absolute;
+	/*background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
+	background-image: linear-gradient(right bottom, rgb(17,17,17) 20%, rgb(51,51,51) 68%, rgb(102,102,102) 93%);
+	background-image: -o-linear-gradient(right bottom, rgb(17,17,17) 20%, rgb(51,51,51) 68%, rgb(102,102,102) 93%);
+	background-image: -moz-linear-gradient(right bottom, rgb(17,17,17) 20%, rgb(51,51,51) 68%, rgb(102,102,102) 93%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(17,17,17) 20%, rgb(51,51,51) 68%, rgb(102,102,102) 93%);
+	background-image: -ms-linear-gradient(right bottom, rgb(17,17,17) 20%, rgb(51,51,51) 68%, rgb(102,102,102) 93%);
+	background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left top,
+	color-stop(0.2, rgb(17,17,17)),
+	color-stop(0.68, rgb(51,51,51)),
+	color-stop(0.93, rgb(102,102,102)));}
+
+div.box_style .slidecontent {
+
+	padding-left:0px;
+	float:left;
+}
+
+div.box_style .subject{
+	margin-top: 30px;
+}
+
+div.box_style .subject strong{	
+}
+
+div.box_style .title {
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+	color:#ffffff;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAMElEQVQIW2MUX3jkPwMSUBYTYmBEFgQJ3H31DiEIEwBpAqtEFgALWm2/9h+kBRkAAO1SGLg+DJ57AAAAAElFTkSuQmCC);
+	padding-right:20px;
+	padding-left:20px;
+	border-top-right-radius:50px;
+	-moz-border-top-right-radius:50px;
+	-webkit-border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+	-moz-border-bottom-right-radius:50px;
+	-webkit-border-bottom-right-radius:50px;
+}
+
+/*
+ * SLIDE STEP STYLES
+ *
+ * inspired by: http://html5slides.googlecode.com/svn/trunk/styles.css
+ *
+ * ;)
+ */
+div.box_style .slide {
+    display: block;
+    width: 900px;
+    height: 700px;
+
+    padding: 40px 60px;
+    border-radius: 20px;
+
+   background-image: linear-gradient(bottom, rgb(255,255,255) 28%, rgb(224,224,224) 64%);
+	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 28%, rgb(224,224,224) 64%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 28%, rgb(224,224,224) 64%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 28%, rgb(224,224,224) 64%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 28%, rgb(224,224,224) 64%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.28, rgb(255,255,255)),
+		color-stop(0.64, rgb(224,224,224))
+	);
+
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 20px solid #17a2c4;
+
+    font-family: 'nanumGothic','malgun Gothic', Arial, sans-serif;
+
+    color: #888888;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-size: 30px;
+    line-height: 36px;
+
+    letter-spacing: -1px;
+
+}
+
+div.box_style .slide q {
+	padding-left:50px;
+	font-size: 30px;
+    line-height: 50px;
+    margin-top:200px;
+	text-align: center;
+
+	}
+
+div.box_style .slide q strong {
+    white-space: nowrap;}
+
+div.box_style blockquote, q {
+    quotes: none;}
+
+div.box_style blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;	}
+
+/* COMMON STEP STYLES */
+
+div.box_style .step {
+    width: 900px;
+    padding-top: 40px;
+	padding-left:0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    /*font-family: 'PT Serif', georgia, serif;*/
+
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/* fade out inactive slides */
+
+div.box_style .step {
+    -webkit-transition: opacity 2s;
+    -moz-transition:    opacity 2s;
+    -ms-transition:     opacity 2s;
+    -o-transition:      opacity 2s;
+    transition:         opacity 2s;
+}
+
+div.box_style .step:not(.active) {
+    opacity: 0.0;
+}
+
+
+/*
+----------------------------------------------------------------------------------
+	box_1_style
+----------------------------------------------------------------------------------
+*/
+
+.box_1_stylefade {
+	position: absolute;
+	background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+}
+
+div.box_1_style .slidecontent {	
+}
+
+div.box_1_style .subject{
+	margin-top: 30px;
+}
+
+div.box_1_style .subject strong{	
+}
+
+div.box_1_style .title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*
+ * SLIDE STEP STYLES
+ *
+ * inspired by: http://html5slides.googlecode.com/svn/trunk/styles.css
+ *
+ * ;)
+ */
+div.box_1_style .slide {
+    display: block;
+
+    width: 900px;
+    height: 700px;
+
+    padding: 40px 60px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-size: 30px;
+    line-height: 36px;
+
+    letter-spacing: -1px;
+}
+
+div.box_1_style .slide q {
+    font-size: 50px;
+    line-height: 72px;
+
+    margin-top: 100px;
+}
+
+div.box_1_style .slide q strong {
+    white-space: nowrap;
+}
+
+div.box_1_style blockquote, q {
+    quotes: none;
+}
+div.box_1_style blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* COMMON STEP STYLES */
+
+div.box_1_style .step {
+    width: 900px;
+    padding: 40px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    /*font-family: 'PT Serif', georgia, serif;*/
+
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/* fade out inactive slides */
+
+div.box_1_style .step {
+    -webkit-transition: opacity 2s;
+    -moz-transition:    opacity 2s;
+    -ms-transition:     opacity 2s;
+    -o-transition:      opacity 2s;
+    transition:         opacity 2s;
+}
+
+div.box_1_style .step:not(.active) {
+    opacity: 0.0;
+}

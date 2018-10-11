@@ -1,0 +1,643 @@
+<div id="ribbon">
+		<div class="ribbon-window-title">
+		<h1 class="logo" ><img src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/toplogo.png" onclick="javascript:JinoUtil.detectIframeOpener('${pageContext.request.contextPath}/index.do');"/><%=inet.getHostAddress()%></h1>
+		<span class="maptitle"><c:out value="${data.map.name}"/></span>
+		<div class="topright">
+
+				<div id='cssmenu'>
+					<ul>
+					<c:choose>
+						<c:when test="${ user == null || user.username == 'guest'}">
+							<!-- <input type="button" class="btn1" onclick="okmLogin()" value="<spring:message code='message.login'/>">
+							<input type="button" class="btn2" onclick="joinmember()" value="<spring:message code='message.join'/>"> -->
+						</c:when>
+						<c:otherwise>
+							<li class='has-sub '><a href='#'><span><c:out value="${user.lastname}"/> <c:out value="${user.firstname}"/><!-- (<c:out value="${user.username}"/>) --></span></a>
+								<ul>
+									<li class='has-sub' ><a href='#' class="1st"  onclick="okmLogout()"><span><spring:message code='message.logout'/></span></a></li>
+									<li class='has-sub' ><a href='#' class="2nd" onclick="editProfile()"><span><spring:message code='message.editprofile'/></span></a></li>
+								</ul>
+							</li>
+						</c:otherwise> 
+					</c:choose>
+					</ul>
+				</div>
+				
+				<script type="text/javascript">
+					function changeLanguage(lang) {
+						document.location.href = "${pageContext.request.contextPath}/language.do?locale=" + lang + "&page=" + document.location.href;
+					}
+				</script>
+				
+				<select class="lang" onchange="changeLanguage(this.value);">
+					<option value="en" <c:if test="${locale.language eq 'en'}">selected</c:if>><spring:message code='menu.select.lang.en'/></option>
+					<option value="ko" <c:if test="${locale.language eq 'ko'}">selected</c:if>><spring:message code='menu.select.lang.ko'/></option>
+					<!-- <option value="ja" <c:if test="${locale.language eq 'ja'}">selected</c:if>><spring:message code='menu.select.lang.ja'/></option> -->
+					<option value="vi" <c:if test="${locale.language eq 'vi'}">selected</c:if>><spring:message code='menu.select.lang.vi'/></option>
+				</select>
+			
+		</div>
+		</div>
+        
+        	<!-- --파일-- -->
+	<div class="scroll_x">
+		<c:choose>
+	      <c:when test="${locale.language eq 'en'}">
+	      <div class="ribbon-tab" id="ribbon-tab-0" style="min-width:564px; display:none">
+	      </c:when>
+	      <c:when test="${locale.language eq 'ko'}">
+	      <div class="ribbon-tab" id="ribbon-tab-0" style="min-width:600px; display:none">
+	      </c:when>
+	      <c:otherwise>
+	      <div class="ribbon-tab" id="ribbon-tab-0" style="min-width:564px; display:none">
+	      </c:otherwise>
+	    </c:choose>
+	     	
+			<span class="ribbon-title"><span><spring:message code='menu.file.file'/></span></span>
+			
+		<!-- -파일(섹션)- -->
+			<div class="ribbon-section">
+				<span class="section-title"><span><spring:message code='menu.file.file'/></span></span><!-- -박스 타이틀- -->
+				
+				<div class="ribbon-button ribbon-button-large" id="newMap" onclick="newMap()">
+					<span class="button-title"><spring:message code='menu.mindmap.new'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.new'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="newCourse" onclick="createMoodle()">
+					<span class="button-title">Create Moodle</span>
+					<span class="button-help">Create a new moodle course</span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="openMap" onclick="openMap()">
+					<span class="button-title"><spring:message code='menu.mindmap.open'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.open'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_file.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_file.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_file.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+					
+				<!--  <div class="ribbon-button ribbon-button-large disabled" id="saveMap">-->
+					<!-- <span class="button-title"><spring:message code='timeline.menu.save'/></span> -아이콘이름- -->
+					<!-- <span class="button-help"><spring:message code='menu.rollover.mindmap.save'/></span> -롤오버시 설명- -->
+					<!-- <img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_save.png" /> 평상시아이콘 -->
+					<!-- <img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_save.png" /> 롤오버했을때 아이콘 -->
+					<!-- <img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_save.png" /> -사용할수없는 아이콘 -->
+				<!-- </div> -->
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="saveAsMap">
+					<span class="button-title"><spring:message code='message.saveas'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.rename'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_saveas.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_saveas.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_saveas.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="timelineMode">
+					<span class="button-title"><spring:message code='menu.mindmap.timelinemode'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.timeline'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_timeline.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_timeline.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_timeline.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- -파일(섹션)끝-- -->
+			
+			<!-- --맵 설정-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='setting.map.preference'/></span><!-- -박스 타이틀- -->
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="splitMap">
+					<span class="button-title"><spring:message code='menu.mindmap.newnodemap'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.newnode'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_separate.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_separate.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_separate.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="delMap">
+					<span class="button-title"><spring:message code='menu.mindmap.delete'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.del'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_del.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_del.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_del.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="changeMapName">
+					<span class="button-title"><spring:message code='message.changntitle'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.chg'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_name.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_name.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_name.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="okmPreference">
+					<span class="button-title"><spring:message code='menu.okmpreference'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.mapsetting'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_setting.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_setting.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_setting.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+			</div>
+			<!-- -맵설정끝-- -->
+		</div>
+        <!-- ---------파일끝----------- -->
+        
+        
+
+<!-- ---------편집----------- -->
+		<c:choose>
+	      <c:when test="${locale.language eq 'en'}">
+	      <div class="ribbon-tab" id="ribbon-tab-1" style="min-width:1300px; display:none">
+	      </c:when>
+	      <c:when test="${locale.language eq 'ko'}">
+	      <div class="ribbon-tab" id="ribbon-tab-1" style="min-width:1300px; display:none">
+	      </c:when>
+	      <c:otherwise>
+	      <div class="ribbon-tab" id="ribbon-tab-1" style="min-width:1300px; display:none">
+	      </c:otherwise>
+	    </c:choose>
+	    
+			<span class="ribbon-title"><spring:message code='common.edit'/></span>
+			<!-- --마디추가-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.basic.creation'/></span><!-- -박스 타이틀- -->
+				<div class="ribbon-button ribbon-button-large disabled" id="insertAction" >
+					<span class="button-title"><spring:message code='menu.edit.childnode'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.addchild'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_childnode.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_childnode.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_childnode.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="insertSiblingAction">
+					<span class="button-title"><spring:message code='menu.edit.siblingnode'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.sibling'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_bronode.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_bronode.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_bronode.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- --마디추가끝-- -->
+			
+			<!-- --기능추가-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.add.funcion'/></span><!-- -박스 타이틀- -->
+				<div class="ribbon-button ribbon-button-large disabled" id="imageProviderAction">
+					<span class="button-title"><spring:message code='menu.edit.imageurl'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.image'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_image.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_image.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_image.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="videoProviderAction">
+					<span class="button-title"><spring:message code='video.video_upload'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.video'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_video.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_video.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_video.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="insertHyperAction">
+					<span class="button-title"><spring:message code='menu.edit.hyperlink'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.hyperlink'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_link.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_link.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_link.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="insertIFrameAction">
+					<span class="button-title"><spring:message code='menu.edit.iframe'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.iframe'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_iframe.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_iframe.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_iframe.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- -기능추가끝-- -->
+			
+			<!-- --마디 편집-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='common.edit.node'/></span><!-- -박스 타이틀- -->
+				<div class="ribbon-button ribbon-button-large disabled" id="nodeTextColorAction" >
+					<span class="button-title"><spring:message code='menu.format.nodetextcolor'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.fontcolor'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_fontcolor.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_fontcolor.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_fontcolor.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="nodeBGColorAction" >
+					<span class="button-title"><spring:message code='menu.format.nodebgcolor'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.nodebgcolor'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_color.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_color.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_color.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large" id="foldingAction" onclick="foldingAction()">
+					<span class="button-title"><spring:message code='menu.view.folding'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.foldunfold'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="ShiftenterAction">
+					<span class="button-title"><spring:message code='menu.view.shiftenter'/></span><!-- -아이콘이름- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/linefed_icon.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/linefed_icon.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/linefed_icon.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="CtrlRAction">
+					<span class="button-title"><spring:message code='menu.view.rangenode'/></span><!-- -아이콘이름- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/noalige_icon.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/noalige_icon.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/noalige_icon.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+			</div>
+			<!-- -편집끝-- -->
+	
+			<!-- -마디변경- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.edit.change'/></span>
+				
+				<div class="left_sml"><!-- -작은아이콘 왼쪽정렬- -->
+				<div class="ribbon-button ribbon-button-small disabled" id="editNodeAction" >
+					<span class="button-title"><spring:message code='menu.edit'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.nodemodification'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_editnode.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_editnode.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_editnode.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="cutAction" >
+					<span class="button-title"><spring:message code='menu.edit.cut'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.cut'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_cut.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_cut.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_cut.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="copyAction" >
+					<span class="button-title"><spring:message code='menu.edit.copy'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.copy'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_copy.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_copy.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_copy.png" />
+				</div>
+				</div>
+				
+				<div class="left_sml"><!-- -작은아이콘 왼쪽정렬- -->
+				<div class="ribbon-button ribbon-button-small disabled" id="pasteAction" >
+					<span class="button-title"><spring:message code='menu.edit.paste'/></span><!-- -아이콘이름- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.paste'/></span><!-- -롤오버시 설명- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_paste.png" /><!-- 평상시아이콘 -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_paste.png" /><!-- 롤오버했을때 아이콘 -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_paste.png" /><!-- -사용할수없는 아이콘 -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="deleteAction" >
+					<span class="button-title"><spring:message code='menu.edit.delete'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.delete'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_delete.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_delete.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_delete.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="nodeColorMix">
+					<span class="button-title"><spring:message code='menu.plugin.colorchange'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.nodecolorchange'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_changecolor.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_changecolor.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_changecolor.png" />
+				</div>
+				</div>
+				
+			</div>
+			<!-- -마디변경끝- -->
+		</div>
+<!-- ---------편집끝----------- -->
+
+
+
+<!-- ---------공유----------- -->
+		<c:choose>
+	      <c:when test="${locale.language eq 'en'}">
+	      <div class="ribbon-tab" id="ribbon-tab-2" style="min-width:680px; display:none">
+	      </c:when>
+	      <c:when test="${locale.language eq 'ko'}">
+	      <div class="ribbon-tab" id="ribbon-tab-2" style="min-width:600px; display:none">
+	      </c:when>
+	      <c:otherwise>
+	      <div class="ribbon-tab" id="ribbon-tab-2" style="min-width:680px; display:none">
+	      </c:otherwise>
+	    </c:choose>
+	    
+			<span class="ribbon-title"><spring:message code='message.share.title.short'/></span>
+			
+			<!-- ---그룹--- -->
+			<div class="ribbon-section">			
+				<span class="section-title"><spring:message code='message.share.add.type.group'/></span>
+				<div class="ribbon-button ribbon-button-large disabled" id="groupManage">
+					<span class="button-title"><spring:message code='menu.setting.group'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.group'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_group.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_group.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_group.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="shareManage">
+					<span class="button-title"><spring:message code='menu.setting.share'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.share'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_share.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_share.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_share.png" />
+				</div>
+			</div>
+			<!-- ---그룹끝--- -->
+			
+			<!-- -임베드-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='video.tabs.embed'/></span>
+				<div class="ribbon-button ribbon-button-large disabled" id="createEmbedTag">
+					<span class="button-title"><spring:message code='video.tabs.embed'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.embed'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_embed.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_embed.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_embed.png" />
+				</div>
+			</div>
+			<!-- -임베드끝-- -->
+			
+			<!-- ---내보내기/가져오기--- -->
+			<div class="ribbon-section">			
+				<span class="section-title"><spring:message code='menu.imexport'/></span>
+				<div class="ribbon-button ribbon-button-large disabled" id="exportFile">
+					<span class="button-title"><spring:message code='menu.export'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.filetransform'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_export.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_export.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_export.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="clipBoard">
+					<span class="button-title"><spring:message code='menu.import'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.ImExport'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_import.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_import.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_import.png" />
+				</div>
+			</div>
+			<!-- ---내보내기 /가져오기  끝--- -->
+			
+			<!-- ---서비스 연계--- -->
+			<!-- <div class="ribbon-section">			
+				<span class="section-title"><spring:message code='menu.serviceconnect'/></span>
+				<div class="ribbon-button ribbon-button-large disabled " id="FacebookGetFeedAction">
+					<span class="button-title"><spring:message code='menu.plugin.facebook'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.facebook'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_facebook.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_facebook.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_facebook.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="twitterfeed">
+					<span class="button-title"><spring:message code='menu.plugin.twitter'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.twitter'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_twitter.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_twitter.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_twitter.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="DeliciousAction">
+					<span class="button-title"><spring:message code='menu.plugin.delicious'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.delicious'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_delicious.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_delicious.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_delicious.png" />
+				</div>
+			</div> -->
+			<!-- ---서비스 연계끝--- -->
+	
+		</div>
+<!-- ---------공유끝----------- -->
+		
+	
+<!-- ---------보기----------- -->	
+		<c:choose>
+	      <c:when test="${locale.language eq 'en'}">
+	      <div class="ribbon-tab" id="ribbon-tab-3" style="min-width:1100px; display:none">
+	      </c:when>
+	      <c:when test="${locale.language eq 'ko'}">
+	      <div class="ribbon-tab" id="ribbon-tab-3" style="min-width:920px; display:none">
+	      </c:when>
+	      <c:otherwise>
+	      <div class="ribbon-tab" id="ribbon-tab-3" style="min-width:1100px; display:none">
+	      </c:otherwise>
+	    </c:choose>
+	    
+			<span class="ribbon-title"><spring:message code='message.share.add.permission_view'/></span>
+			
+			<!-- -프레젠테이션- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.advanced.pt'/></span>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="presentationStartMode">
+					<span class="button-title"><spring:message code='menu.advanced.pt.show.view'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.presentation.presentation'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_show.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_show.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_show.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="presentationEditMode">
+					<span class="button-title"><spring:message code='common.edit'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.presentation.edit'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_edit.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_edit.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_edit.png" />
+				</div>
+				
+			</div>
+			<!-- -프레젠테이션끝- -->
+			
+			<!-- -맵보기- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='message.share.add.mapview'/></span>
+			
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="foldingall" folding_check="1" >
+					<span class="button-title"><spring:message code='menu.view.afolding'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.allfoldunfold'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="zoominAction">
+					<span class="button-title"><spring:message code='menu.view.zoomin'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.scaleup'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_plus.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_plus.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_plus.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="zoomoutAction">
+					<span class="button-title"><spring:message code='menu.view.zoomout'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.scaledown'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_minus.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_minus.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_minus.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="zoomnotAction">
+					<span class="button-title"><spring:message code='menu.view.zoomnot'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.realscale'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fit.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fit.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fit.png" />
+				</div>
+				
+			</div>
+			<!-- -맵보기끝- -->
+			
+			<!-- -맵스타일- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.advanced.pt.mapstyle'/></span>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="changeToMindmap">
+					<span class="button-title"><spring:message code='common.mapstyle.mindmap'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mapstyle.mindmap'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_mindmap.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_mindmap.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_mindmap.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="changeToTree">
+					<span class="button-title"><spring:message code='common.mapstyle.tree'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mapstyle.treemap'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_treemap.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_treemap.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_treemap.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="changeToFishbone">
+					<span class="button-title"><spring:message code='common.mapstyle.fishbone'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mapstyle.fishbone'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fishbone.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fishbone.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fishbone.png" />
+				</div>
+				
+			</div>
+			<!-- -맵스타일끝- -->
+			
+			<!-- -기타- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.etc'/></span>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="rightPanelFolding">
+					<span class="button-title"><spring:message code='chatting.expanding'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.etc.chatting'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_chat.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_chat.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_chat.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="googleSearch" folding-stat="0">
+					<span class="button-title"><spring:message code='menu.advanced.googlesearch'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.etc.googlesearch'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_google.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_google.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_google.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="activityMonitoring">
+					<span class="button-title"><spring:message code='menu.advanced.activity'/></span><!-- -아이콘이름- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/activity_icon.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/activity_icon.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/activity_icon.png" />
+				</div>
+				
+			</div>
+			<!-- -기타끝- -->
+
+			
+		</div>
+	<!-- ---------보기끝----------- -->	
+
+
+<!-- ---------고객센터----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-4" style="min-width:300px; display:none">
+			<span class="ribbon-title"><spring:message code='menu.cs'/></span>
+			<div class="ribbon-section">
+			
+				<span class="section-title"><spring:message code='menu.cs'/></span>
+				
+				<div class="ribbon-button ribbon-button-large" id="notice" onclick="okmNoticeAction(true)">
+					<span class="button-title"><spring:message code='menu.cs.notice'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.notice'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_notice.png"" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_notice.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_notice.png" />
+				</div>
+				
+				<!-- 
+				<div class="ribbon-button ribbon-button-large" id="qna" onclick="qna()">
+					<span class="button-title"><spring:message code='menu.cs.qna'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.qanda'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+				</div>
+				-->
+				<div class="ribbon-button ribbon-button-large" id="request" onclick="requestFunction()">
+					<span class="button-title"><spring:message code='menu.cs.qna'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.qanda'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large " id="howtoUse" onclick="howtoUse()">
+					<span class="button-title"><spring:message code='menu.help.usage'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.manual'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_manual.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_manual.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_manual.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large " id="aboutJinoTech" onclick="aboutJinoTech()">
+					<span class="button-title"><spring:message code='menu.help.introjino'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.jinotech'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_com.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_com.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_com.png" />
+				</div>
+			</div>
+		
+
+		</div>
+	</div>	
+<!-- ---------고객센터끝----------- -->		
+
+		
+	<!--wonho- 아래의 폴딩 버튼을 위해 삽입 folding-stat은 현재 접혀있나 펼쳐있나를 알기위해 sel-tab 은 현재 탭이 두번 눌릴 경우를 알기 위해 이를 저장함-->
+	<div class="folding">
+	<div class="ribbon-button ribbon-button-small" id="folding-RB" folding-stat="1" sel-tab="-1"><img align=center src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/foldicon1.png" ></div>
+	</div>
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  - Application context definition for JPetStore's business layer.
+  - Contains bean references to the transaction manager and to the DAOs in
+  - dataAccessContext-local/jta.xml (see web.xml's "contextConfigLocation").
+  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+			http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd 
+			http://www.springframework.org/schema/context 
+			http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<!-- ========================= GENERAL DEFINITIONS ========================= -->
+
+	<!-- Configurer that replaces ${...} placeholders with values from properties files -->
+	<!-- (in this case, mail and JDBC related properties) -->
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>WEB-INF/mail.properties</value>
+				<value>WEB-INF/jdbc.properties</value>
+				<value>WEB-INF/repository.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- ========================= VIEW DEFINITIONS ========================= -->
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+		<property name="prefix" value="/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+
+
+
+	<!-- 
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages"/>
+	</bean>
+	 -->
+	
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>WEB-INF/lang/Messages</value>
+			</list>
+		</property>
+		<property name="cacheSeconds" value="5"/>
+	</bean>
+
+	<bean id="messageSourceAccessor" class="org.springframework.context.support.MessageSourceAccessor">
+		<constructor-arg ref="messageSource" />
+	</bean>
+	
+	<!-- 
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver" />
+	-->
+	 
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver" >
+		<property name="cookieName" value="locale"/>
+		<property name="cookieMaxAge" value="-1"/>
+		<property name="defaultLocale" value="ko" />
+	</bean>
+<!--	
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />
+ -->
+ 
+<!-- 
+	<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+		<property name="paramName" value="lang"/>
+	</bean>
+	 
+	<bean id="annotationMapper" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="localeChangeInterceptor"/>
+			</list>
+		</property>
+	</bean>
+ -->
+
+
+
+
+	<!-- MailSender used by EmailAdvice -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${mail.host}"/>
+		<property name="port" value="${mail.port}"/>
+		<property name="protocol" value="${mail.protocol}"/>
+		<property name="username" value="${mail.username}"/>
+		<property name="password" value="${mail.password}"/>
+		<property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtps.auth">true</prop>
+                <prop key="mail.smtps.startls.enable">true</prop>
+                <prop key="mail.smtps.debug">true</prop>
+            </props>
+        </property>
+	</bean>
+
+	<!-- Annotation을 이용한 Controller 생성 -->
+	<!-- 
+	<bean id="annotationHandlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+        <property name="alwaysUseFullPath" value="true"/>
+    </bean>
+    <context:component-scan base-package="com.okmindmap" />
+    -->
+    
+    
+    
+    
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize">
+			<value>${repository.maxUploadSize}</value>
+		</property>
+	</bean>
+
+    <!-- Activates annotation-based bean configuration -->
+    <context:annotation-config />
+
+    <!-- Scans for application @Components to deploy -->
+    <context:component-scan
+        base-package="com.okmindmap"
+    />	
+
+	<bean id="contextApplicationContextProvider" class="com.okmindmap.context.ApplicationContextProvider"></bean>
+
+
+	<!-- ========================= BUSINESS OBJECT DEFINITIONS ======================== -->
+	
+	<bean id="chatService" class="com.okmindmap.service.impl.ChatServiceImpl">
+		<property name="chatDAO" ref="chatDAO"/>
+	</bean>
+	
+	
+	<bean id="queueService" class="com.okmindmap.service.impl.QueueServiceImpl">
+		<property name="queueDAO" ref="queueDAO"/>
+	</bean>
+	
+	<bean id="mindmapService" class="com.okmindmap.service.impl.MindmapServiceImpl">
+		<property name="mindmapDAO" ref="mindmapDAO"/>
+	</bean>
+
+	<bean id="userService" class="com.okmindmap.service.impl.UserServiceImpl" abstract="true">
+		<property name="userDAO" ref="userDAO"/>
+	</bean>
+	
+	<bean id="userMenuService" class="com.okmindmap.service.impl.UserMenuServiceImpl">
+		<property name="userMenuDAO" ref="userMenuDAO"/>
+	</bean>
+	
+	<bean id="categoryService" class="com.okmindmap.service.impl.CategoryServiceImpl">
+		<property name="categoryDAO" ref="categoryDAO"/>
+	</bean>
+	
+	<bean id="groupService" class="com.okmindmap.service.impl.GroupServiceImpl">
+		<property name="groupDAO" ref="groupDAO"/>
+		<property name="categoryDAO" ref="categoryDAO"/>
+		<property name="shareDAO" ref="shareDAO"/>
+	</bean>
+	
+	<bean id="shareService" class="com.okmindmap.service.impl.ShareServiceImpl">
+		<property name="groupDAO" ref="groupDAO"/>
+		<property name="shareDAO" ref="shareDAO"/>
+	</bean>
+	
+	<bean id="mailService" class="com.okmindmap.service.impl.MailServiceImpl">
+		<property name="mailSender" ref="mailSender"/>
+	</bean>
+	
+	<bean id="boardService" class="com.okmindmap.service.impl.BoardServiceImpl">
+		<property name="boardDAO" ref="boardDAO"/>
+		<property name="reportTo" value="fury2829@jinotech.com,hyensu@jinotech.com,jinhoon@jinotech.com,wonyho@gmail.com,ysshin63@gmail.com,sujung@jinotech.com,sohee@jinotech.com,hyuncheol@jinotech.com"/>
+        <property name="mailService" ref="mailService"/>
+	</bean>
+	
+	<bean id="boardMemoService" class="com.okmindmap.service.impl.BoardMemoServiceImpl">
+		<property name="boardMemoDAO" ref="boardMemoDAO"/>
+	</bean>
+	
+	<bean id="repositoryService" class="com.okmindmap.service.impl.RepositoryServiceImpl">
+		<constructor-arg value="${repository.path}" />
+		<property name="repositoryDAO" ref="repositoryDAO"/>
+	</bean>
+	
+	<bean id="restrictService" class="com.okmindmap.service.impl.RestrictServiceImpl">
+		<property name="restrictDAO" ref="restrictDAO"/>
+	</bean>
+	
+	<bean id="okmindmapService" class="com.okmindmap.service.impl.OKMindmapServiceImpl">
+		<property name="okmindmapDAO" ref="okmindmapDAO"/>
+	</bean>
+	
+	<bean id="discussService" class="com.okmindmap.service.impl.DiscussServiceImpl">
+		<property name="discussDAO" ref="discussDAO"/>
+	</bean>
+	
+	<bean id="noticeService" class="com.okmindmap.service.impl.NoticeServiceImpl">
+		<property name="noticeDAO" ref="noticeDAO"/>
+	</bean>
+	
+	<!-- scheduledTask -->
+	
+	<bean id="flushLock" class="com.okmindmap.web.spring.FlushLock">
+		<property name="flushTimeout" value="86400000" />		<!-- 이 시간동안 사용하지 않은 락은 삭제 -->
+	</bean>
+
+	<bean id="scheduledTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<property name="delay" value="1000" />
+		<property name="period" value="1800000" />		<!-- 락제거 주기 (intervar) -->
+		<property name="timerTask" ref="flushLock" />
+	</bean>
+
+	<bean id="timerFactory" class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref bean="scheduledTask" />
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Exception Resolver -->
+	<bean id="exceptionMapping" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="MaxUploadSizeExceededException">
+					error/maxUploadSize
+				</prop>
+			</props>
+		</property>		
+	</bean>
+	
+    <!-- Job Schedule -->
+    <bean id="reportJob" class="com.okmindmap.report.StatisticsReport">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="reportTo" value="fury2829@jinotech.com,hyensu@jinotech.com,jinhoon@jinotech.com,wonyho@gmail.com,ysshin63@gmail.com,sujung@jinotech.com,sohee@jinotech.com,hyuncheol@jinotech.com"/>
+        <property name="reportDays" value="7"/>
+        <property name="mailService" ref="mailService"/>
+    </bean>
+    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="reportJob"/>
+        <property name="targetMethod" value="report"/>
+    </bean>
+    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="jobDetail"/>
+        <property name="cronExpression" value="0 15 0 * * ?"/>
+    </bean>
+    
+    <!--  Recommend Schedule -->
+    <bean id="recommendJob" class="com.okmindmap.stats.RecommendMap">
+    	<property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="recommendjobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="recommendJob"/>
+        <property name="targetMethod" value="updateRecommedPoint"/>
+    </bean>
+    <bean id="recommendcronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="recommendjobDetail"/>
+        <property name="cronExpression" value="0 33 * * * ?"/>
+    </bean>
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="recommendcronTrigger"/>
+            </list>
+        </property>
+    </bean> 
+</beans>

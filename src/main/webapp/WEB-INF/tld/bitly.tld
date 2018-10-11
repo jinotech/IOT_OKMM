@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+<tlibversion>1.3</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>Bitly taglib</shortname>
+<uri>http://www.servletsuite.com/servlets/bitlytag</uri>
+<info>Bitly taglib</info>
+
+<tag>
+<name>BitlyUrl</name>
+<tagclass>com.cj.bitly.BitlyUrlTag</tagclass>
+<teiclass>com.cj.bitly.strVar</teiclass>
+<bodycontent>JSP</bodycontent>
+<info>shorten expand Bit.ly URL</info>
+
+<attribute>
+<name>proxyHost</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>proxyPort</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>version</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>action</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>login</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>apiKey</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>id</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+</tag>
+
+</taglib>

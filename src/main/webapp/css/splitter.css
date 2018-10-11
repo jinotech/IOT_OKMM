@@ -1,0 +1,32 @@
+
+.splitter-default { background-color: #fefefe }
+.splitter-hover { background: #dedede}
+.splitter-highlight { background: #dedede}
+.splitter-limit { background-color: #fefefe }
+
+ div.splitter-pane {
+	/*overflow: auto;*/
+	height: 300px;
+	width: 250px;
+	position:absolute;
+	top:100px;
+}
+.splitter-bar-horizontal {
+	height: 10px;
+	background-image: url(../images/vgrabber.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	border:1px solid #ccc;
+}
+.splitter-bar-horizontal-docked {
+	height: 10x;
+	background-image: url(../images/vgrabber.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.splitter-bar.ui-state-highlight {
+	opacity: 0.6;
+}
+.splitter-iframe-hide {
+	visibility: hidden;
+}

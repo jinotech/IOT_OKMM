@@ -1,0 +1,190 @@
+html {
+	-webkit-text-size-adjust:none;
+}
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	height:100%;
+	overflow:hidden	
+}
+
+a:link {
+	text-decoration:none;
+}
+
+#top {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	/* height:77px; */
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+
+#okmenubar {
+	padding: 0px;
+	border: 0px;
+	/* ie5win fudge begins */
+	margin: 0px; 
+	voice-family: "\"}\"";
+	voice-family:inherit;
+}
+
+#userinfo {
+	position: absolute;
+	top: 0px;
+	right: 0px; /* Opera5.02 will show a space at right 
+	when there is no scroll bar */
+	margin: 5px;
+	padding: 14px 0px 0px 0px;
+	border: 0px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	text-align: right;
+}
+
+#middle {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background: #fff;
+}
+
+#bottom {
+	background-color: #f4f4f4;
+	height: 48px;
+	position:relative;
+}
+
+#bottom table{
+	position: absolute;
+	bottom: 0;
+	table-layout: fixed;
+
+	
+}
+#bottom td{
+	background:URL(../images/footerbg.png) repeat-x;
+	font-size:11px;
+	color:#ccc;
+	letter-spacing:-0.4px;
+	line-height:115%;
+	padding-left:100px;
+	padding-right:100px;
+}
+
+#bottom tr{
+	margin:0;
+}
+.copyright_text {
+	position:relative;
+	padding-top:12px; 
+	text-align:right;
+	float:right;
+	right:15px;
+}
+.copyright_text a{
+	color:#accbda;
+}
+
+.copyright_logo {
+	padding-right:30px; 
+	float:right;
+	margin-top:10px;
+}
+
+#statcounter {
+	text-align:left; 
+	margin-right:25px;
+	padding-top:12px;
+	color:#fcd17e
+}
+
+
+.yuimenubaritemlabel:hover{
+    color:#3a7ea2;
+	background:-webkit-gradient(linear, 20% 43%, 21% 100%, from(#FFFFFF), to(#CFD9DB));
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	
+}
+
+
+
+
+
+
+/*���� �α��ι�ư*/
+#cssmenu > ul{
+	margin-top:5px !important;
+}
+
+
+input[type="button"].btn1, input[type="button"].btn2{
+	background: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 3px 10px;
+}
+
+input[type="button"].btn1:hover{
+	color:#dedede;
+	text-decoration:underline;
+}
+
+/*���� ȸ�����Թ�ư*/
+
+input[type="button"].btn2:hover {
+	color:#dedede;
+	text-decoration:underline;
+}
+
+
+#userinfo select{
+	font-size:11px;
+	font-family:"NanumGothicBolder",Malgun Gothic,sans-serif;
+	-webkit-appearance: menulist;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	border: none;
+	border-top-left-radius:5px;
+	white-space: pre;
+	-webkit-rtl-ordering: logical;
+	color: #fefefe;
+	cursor: default;
+	background:#4b89a9;
+}
+
+
+
+
+.bar {
+	color:transparent;
+
+}
+
+.userfont {
+	color:#cce3ea;
+	font-family:"NanumGothicBolder",Malgun Gothic,sans-serif;
+	font-size:12px;
+}
+
+.copyright {
+	background:transparent;
+}
+
+

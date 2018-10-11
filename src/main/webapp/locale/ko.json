@@ -1,0 +1,78 @@
+{
+	"address" : "주소",
+	
+	"button_apply" : "적용",
+	"bg_color" : "배경 색상",
+	"line_color" : "라인 색상",
+	
+	"chatting" : "채팅",
+    "chatting_expanding" : "채팅 열기",
+    "create_node_text" : "텍스트로 노드를 생성합니다.",
+    "create_node_xml" : "Xml로 노드를 생성합니다.",
+
+    "export_text" : "텍스트로 내보내기",
+    "export_xml" : "xml로 내보내기",
+	
+    "facebook_locale" : "ko_KR",
+    "find" : "찾기",
+	
+	"google_search" : "구글 검색",
+	"google_autosearch" : "자동 검색",
+	"google_cse" : "사용자 정의 검색",
+	
+	"height" : "높이",
+	"hyperlink_delete" : "하이퍼링크 삭제",
+	
+	"iframe" : "아이프레임",
+	"iframe_delete" : "아이프레임 삭제",
+	"import_text" : "텍스트 가져오기",
+	"import_xml" : "Xml 가져오기",
+	"insert_image" : "이미지 넣기",
+	"ignore_case" : "대소문자 구분 없이",
+    
+    "language" : "한국어",
+	"loadChatMessage" :"이전 대화 불러오기...",
+    
+	"margin_left": "X",
+	"margin_top": "Y",
+	"menu_edit_hyperlink" : "하이퍼링크",
+	
+	"no": "아니오 ",
+	"node_structure" : "노드의 구조", 
+    "notice_button_ok" : "확인",
+    "notice_button_skip" : "오늘 하루 보지 않기",
+    "notice_message" : "메시지",
+    "notice_title" : "공지",
+
+    "okm_notice_title" : "공지사항",
+    "okm_notice_button_close" : "다음 변경시 까지 열지 않기",
+
+    "qr_code" : "QR Code",
+	
+	"scrolling": "스크롤",
+	"send" : "보내기",
+	"search" : "검색", 
+
+	"text_color" : "글자 색상", 
+
+	"width" : "넓이",
+	"whole_word" : "전체 단어",
+
+	"yes": "예 ",
+	
+	"restrict_editing": "편집할 수 없습니다.",
+	
+	"webpage" : "웹페이지",
+	"lti"  : "LTI 연결",
+	"webpage_delete" : "웹페이지 삭제",
+	"toolbar_toggle" : "표시 / 숨기기 도구 모음",
+	"zoom" : "줌",
+	
+	"launch_url": "URL 시작",
+	"secret_value" : "비밀 값",
+	"key_value" : "키 값",
+	
+	"menu_edit_text_on_branch" : "분기에 텍스트"
+	
+	
+}

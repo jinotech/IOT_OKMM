@@ -1,0 +1,13 @@
+# Properties file with JDBC-related settings.
+# Applied by PropertyPlaceholderConfigurer from "dataAccessContext-local.xml".
+# Targeted at system administrators, to avoid touching the context XML files.
+
+#jdbc.driverClassName=org.hsqldb.jdbcDriver
+#jdbc.url=jdbc:hsqldb:hsql://localhost:9002
+#jdbc.username=sa
+#jdbc.password=
+
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/okmindmap?useUnicode=true&characterEncoding=UTF8
+jdbc.username=okmindmap
+jdbc.password=38EswjwdczeMS5CW

@@ -1,0 +1,468 @@
+<div id="ribbon">
+		<div class="ribbon-window-title">
+		<h1 class="logo" ><img src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/toplogo.png" onclick="javascript:JinoUtil.detectIframeOpener('${pageContext.request.contextPath}/index.do');"/></h1>
+		<span class="maptitle"><c:out value="${data.map.name}"/></span>
+		<div class="topright">
+
+				<div id='cssmenu'>
+					<ul>
+					<c:choose>
+						<c:when test="${ user == null || user.username == 'guest'}">
+							<input type="button" class="btn1" onclick="okmLogin()" value="<spring:message code='message.login'/>">
+							<input type="button" class="btn2" onclick="joinmember()" value="<spring:message code='message.join'/>">
+						</c:when>
+						<c:otherwise>
+							<li class='has-sub '><a href='#'><span><c:out value="${user.lastname}"/> <c:out value="${user.firstname}"/>(<c:out value="${user.username}"/>)</span></a>
+								<ul>
+									<li class='has-sub' ><a href='#' class="1st"  onclick="okmLogout()"><span><spring:message code='message.logout'/></span></a></li>
+									<li class='has-sub' ><a href='#' class="2nd" onclick="editProfile()"><span><spring:message code='message.editprofile'/></span></a></li>
+								</ul>
+							</li>
+						</c:otherwise>
+					</c:choose>
+					</ul> 
+				</div>
+				
+				<script type="text/javascript">
+					function changeLanguage(lang) {
+						document.location.href = "${pageContext.request.contextPath}/language.do?locale=" + lang + "&page=" + document.location.href;
+					}
+				</script>
+				
+				<select class="lang" onchange="changeLanguage(this.value);">
+					<option value="en" <c:if test="${locale.language eq 'en'}">selected</c:if>><spring:message code='menu.select.lang.en'/></option>
+					<option value="ko" <c:if test="${locale.language eq 'ko'}">selected</c:if>><spring:message code='menu.select.lang.ko'/></option>
+					<!-- <option value="ja" <c:if test="${locale.language eq 'ja'}">selected</c:if>><spring:message code='menu.select.lang.ja'/></option> -->
+					<option value="vi" <c:if test="${locale.language eq 'vi'}">selected</c:if>><spring:message code='menu.select.lang.vi'/></option>
+				</select>
+			
+		</div>
+		</div>
+        
+			<!-- --�뙆�씪-- -->
+		<div class="ribbon-tab" id="ribbon-tab-0" style="display:none">
+			<span class="ribbon-title"><span><spring:message code='menu.file.file'/></span></span>
+			
+		<!-- -�뙆�씪(�꽮�뀡)- -->
+			<div class="ribbon-section">
+				<span class="section-title"><span><spring:message code='menu.file.file'/></span></span><!-- -諛뺤뒪 ���씠��- -->
+				<div class="left_sml_mobile">
+				<div class="ribbon-button ribbon-button-mobile" id="newMap" onclick="newMap()">
+					<span class="button-title"><spring:message code='menu.mindmap.new'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.new'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_new.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile" id="openMap" onclick="openMap()">
+					<span class="button-title"><spring:message code='menu.mindmap.open'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.open'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_file.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_file.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_file.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="saveMap">
+					<span class="button-title"><spring:message code='timeline.menu.save'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.save'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_save.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_save.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_save.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				</div>
+				<div class="left_sml_mobile">
+				<div class="ribbon-button ribbon-button-mobile disabled" id="saveAsMap">
+					<span class="button-title"><spring:message code='message.saveas'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.rename'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_saveas.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_saveas.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_saveas.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				<div class="ribbon-button ribbon-button-mobile disabled" id="okmPreference">
+					<span class="button-title"><spring:message code='menu.okmpreference'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.mapsetting'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_setting.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_setting.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_setting.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				</div>
+			</div>
+			<!-- -�뙆�씪(�꽮�뀡)�걹-- -->
+			
+			<!-- --留� �꽕�젙-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='setting.map.preference'/></span><!-- -諛뺤뒪 ���씠��- -->
+				<div class="left_sml_mobile">
+				<div class="ribbon-button ribbon-button-mobile disabled" id="splitMap">
+					<span class="button-title"><spring:message code='menu.mindmap.newnodemap'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.newnode'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_separate.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_separate.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_separate.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="delMap">
+					<span class="button-title"><spring:message code='menu.mindmap.delete'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.del'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_del.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_del.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_del.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="changeMapName">
+					<span class="button-title"><spring:message code='message.changntitle'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.chg'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_name.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_name.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/file_name.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				</div>		
+			</div>
+			<!-- -留듭꽕�젙�걹-- -->
+		</div>
+        <!-- ---------�뙆�씪�걹----------- -->
+        
+        
+
+<!-- ---------�렪吏�----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-1" style="display:none">
+			<span class="ribbon-title"><spring:message code='common.edit'/></span>
+			<!-- --留덈뵒異붽�-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.basic.creation'/></span><!-- -諛뺤뒪 ���씠��- -->
+				<div class="left_sml_mobile">
+				<div class="ribbon-button ribbon-button-mobile disabled" id="insertAction" >
+					<span class="button-title"><spring:message code='menu.edit.childnode'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.addchild'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_childnode.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_childnode.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_childnode.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="insertSiblingAction">
+					<span class="button-title"><spring:message code='menu.edit.siblingnode'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.sibling'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_bronode.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_bronode.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_bronode.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				</div>
+			</div>
+			<!-- --留덈뵒異붽��걹-- -->
+			<!-- -留덈뵒蹂�寃�- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.edit.change'/></span>
+				
+				<div class="left_sml"><!-- -�옉���븘�씠肄� �쇊履쎌젙�젹- -->
+				<div class="ribbon-button ribbon-button-small disabled" id="editNodeAction" >
+					<span class="button-title"><spring:message code='menu.edit'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.nodemodification'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_editnode.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_editnode.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_editnode.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="cutAction" >
+					<span class="button-title"><spring:message code='menu.edit.cut'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.cut'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_cut.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_cut.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_cut.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="copyAction" >
+					<span class="button-title"><spring:message code='menu.edit.copy'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.copy'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_copy.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_copy.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_copy.png" />
+				</div>
+				</div>
+				
+				<div class="left_sml"><!-- -�옉���븘�씠肄� �쇊履쎌젙�젹- -->
+				<div class="ribbon-button ribbon-button-small disabled" id="pasteAction" >
+					<span class="button-title"><spring:message code='menu.edit.paste'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.paste'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_paste.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_paste.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_paste.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small disabled" id="deleteAction" >
+					<span class="button-title"><spring:message code='menu.edit.delete'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.delete'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_delete.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_delete.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_delete.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-small " id="foldingAction" onclick="foldingAction()" >
+					<span class="button-title"><spring:message code='menu.view.folding'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.midnmap.foldunfold'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				</div>
+				
+			</div>
+			<!-- -留덈뵒蹂�寃쎈걹- -->
+			
+			<!-- 湲곕뒫異붽� 紐⑤컮�씪 -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.add.funcion'/></span><!-- -諛뺤뒪 ���씠��- -->
+				<div class="ribbon-button ribbon-button-mobile disabled" id="imageProviderAction">
+					<span class="button-title"><spring:message code='menu.edit.imageurl'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.image'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_image.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_image.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_image.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="videoProviderAction">
+					<span class="button-title"><spring:message code='video.video_upload'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.video'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_video.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_video.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_video.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="insertHyperAction">
+					<span class="button-title"><spring:message code='menu.edit.hyperlink'/></span><!-- -�븘�씠肄섏씠由�- -->
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.hyperlink'/></span><!-- -濡ㅼ삤踰꾩떆 �꽕紐�- -->
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_link.png" /><!-- �룊�긽�떆�븘�씠肄� -->
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_link.png" /><!-- 濡ㅼ삤踰꾪뻽�쓣�븣 �븘�씠肄� -->
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_link.png" /><!-- -�궗�슜�븷�닔�뾾�뒗 �븘�씠肄� -->
+				</div>
+			</div>			
+		</div>
+<!-- ---------�렪吏묐걹----------- -->
+
+
+
+<!-- ---------怨듭쑀----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-2" style="display:none">
+			<span class="ribbon-title"><spring:message code='message.share.title.short'/></span>
+			
+			<!-- ---洹몃９--- -->
+			<div class="ribbon-section">			
+				<span class="section-title"><spring:message code='message.share.add.type.group'/></span>
+				<div class="ribbon-button ribbon-button-large disabled" id="groupManage">
+					<span class="button-title"><spring:message code='menu.setting.group'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.group'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_group.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_group.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_group.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large disabled" id="shareManage">
+					<span class="button-title"><spring:message code='menu.setting.share'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.share'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_share.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_share.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_share.png" />
+				</div>
+			</div>
+			<!-- ---洹몃９�걹--- -->
+			
+			<!-- -�엫踰좊뱶-- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='video.tabs.embed'/></span>
+				<div class="ribbon-button ribbon-button-large disabled" id="createEmbedTag">
+					<span class="button-title"><spring:message code='video.tabs.embed'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mindmap.embed'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_embed.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_embed.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/share_embed.png" />
+				</div>
+			</div>
+			<!-- -湲고�- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.etc'/></span>
+				<div class="ribbon-button ribbon-button-mobile disabled" id="foldingall" folding_check="1" >
+					<span class="button-title"><spring:message code='menu.view.afolding'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.allfoldunfold'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/edit_expand.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-mobile disabled" id="googleSearch" folding-stat="0">
+					<span class="button-title"><spring:message code='menu.advanced.googlesearch'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.etc.googlesearch'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_google.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_google.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_google.png" />
+				</div>
+				
+			</div>
+			<!-- -�엫踰좊뱶�걹-- -->
+		</div>
+<!-- ---------怨듭쑀�걹----------- -->
+		
+	
+<!-- ---------蹂닿린----------- -->	
+		<div class="ribbon-tab" id="ribbon-tab-3" style="display:none">
+			<span class="ribbon-title"><spring:message code='message.share.add.permission_view'/></span>
+			
+			<!-- -�봽�젅�젨�뀒�씠�뀡- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.advanced.pt'/></span>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="presentationStartMode">
+					<span class="button-title"><spring:message code='menu.advanced.pt.show.view'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.presentation.presentation'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_show.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_show.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_show.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="presentationEditMode">
+					<span class="button-title"><spring:message code='common.edit'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.presentation.edit'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_edit.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_edit.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_edit.png" />
+				</div>
+				
+			</div>
+			<!-- -�봽�젅�젨�뀒�씠�뀡�걹- -->
+			
+			<!-- -留듬낫湲�- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='message.share.add.mapview'/></span>
+			
+				
+				
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="zoominAction">
+					<span class="button-title"><spring:message code='menu.view.zoomin'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.scaleup'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_plus.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_plus.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_plus.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="zoomoutAction">
+					<span class="button-title"><spring:message code='menu.view.zoomout'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.scaledown'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_minus.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_minus.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_minus.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="zoomnotAction">
+					<span class="button-title"><spring:message code='menu.view.zoomnot'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.show.mapview.realscale'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fit.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fit.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fit.png" />
+				</div>
+				
+			</div>
+			<!-- -留듬낫湲곕걹- -->
+			
+			<!-- -留듭뒪���씪- -->
+			<div class="ribbon-section">
+				<span class="section-title"><spring:message code='menu.advanced.pt.mapstyle'/></span>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="changeToMindmap">
+					<span class="button-title"><spring:message code='common.mapstyle.mindmap'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mapstyle.mindmap'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_mindmap.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_mindmap.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_mindmap.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="changeToTree">
+					<span class="button-title"><spring:message code='common.mapstyle.tree'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mapstyle.treemap'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_treemap.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_treemap.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_treemap.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-mobile disabled" id="changeToFishbone">
+					<span class="button-title"><spring:message code='common.mapstyle.fishbone'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.mapstyle.fishbone'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fishbone.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fishbone.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/show_fishbone.png" />
+				</div>
+				
+			</div>
+			<!-- -留듭뒪���씪�걹- -->
+			
+			
+			<!-- -湲고��걹- -->
+
+			
+		</div>
+	<!-- ---------蹂닿린�걹----------- -->	
+
+
+<!-- ---------怨좉컼�꽱�꽣----------- -->
+		<div class="ribbon-tab" id="ribbon-tab-4" style="display:none">
+			<span class="ribbon-title"><spring:message code='menu.cs'/></span>
+			<div class="ribbon-section">
+			
+				<span class="section-title"><spring:message code='menu.cs'/></span>
+				
+				<div class="ribbon-button ribbon-button-large" id="notice" onclick="okmNoticeAction(true)">
+					<span class="button-title"><spring:message code='menu.cs.notice'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.notice'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_notice.png"" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_notice.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_notice.png" />
+				</div>
+				
+				<!-- 
+				<div class="ribbon-button ribbon-button-large" id="qna" onclick="qna()">
+					<span class="button-title"><spring:message code='menu.cs.qna'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.qanda'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+				</div>
+				-->
+				<div class="ribbon-button ribbon-button-large" id="request" onclick="requestFunction()">
+					<span class="button-title"><spring:message code='menu.cs.qna'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.qanda'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_qna.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large " id="howtoUse" onclick="howtoUse()">
+					<span class="button-title"><spring:message code='menu.help.usage'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.manual'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_manual.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_manual.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_manual.png" />
+				</div>
+				
+				<div class="ribbon-button ribbon-button-large " id="aboutJinoTech" onclick="aboutJinoTech()">
+					<span class="button-title"><spring:message code='menu.help.introjino'/></span>
+					<span class="button-help"><spring:message code='menu.rollover.customer.jinotech'/></span>
+					<img class="ribbon-icon ribbon-normal" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_com.png" />
+					<img class="ribbon-icon ribbon-hot" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_com.png" />
+					<img class="ribbon-icon ribbon-disabled" src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/customer_com.png" />
+				</div>
+			</div>
+		
+
+		</div>
+<!-- ---------�⑥쥒而쇽옙�눛苑ｏ옙占�---------- -->		
+	<div class="folding">
+	<div class="ribbon-button ribbon-button-small" id="folding-RB" folding-stat="1" sel-tab="-1"><img align=center src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/foldicon1.png" ></div>
+	</div>
+		
+	<!--wonho- 占쎄쑬�삋占쏙옙占쎈�逾� 甕곌쑵�뱣占쏙옙占쎄쑵鍮� 占쎌럩�뿯 folding-stat占쏙옙占쎄쑴�삺 占쎈쵑占쏙옙�뜄援� 占쎌눘�쒙옙�뜄援밭몴占쏙옙�슡由곤옙袁る퉸 sel-tab 占쏙옙占쎄쑴�삺 占쏙옙�뵠 占쎈Ŧ苡� 占쎈슢�뵭 野껋럩�뒭�몴占쏙옙�슡由� 占쎄쑵鍮� 占쎈�占� 占쏙옙�삢占쏙옙-->
+	<div class="folding">
+	<div class="ribbon-button ribbon-button-small" id="folding-RB" folding-stat="1" sel-tab="-1"><img align=center src="${pageContext.request.contextPath}/ribbonmenu/ribbonicons/foldicon1.png" ></div>
+	</div>
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,623 @@
+
+/*
+------------------------------
+	OKM
+------------------------------
+*/
+.okmfade{
+	position: absolute; 
+	background-color: #aaaaaa; 
+}
+div.okm{ 
+	width: 400px;
+	position: absolute; 
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-box-shadow:
+	0px 1px 3px rgba(000,000,000,0.5);
+	-webkit-box-shadow:
+	0px 1px 3px rgba(000,000,000,0.5);
+	background:URL(../images/dialog_title.png) top repeat-x #fefefe;
+}
+div.okm .okmcontainer{ 
+	 font-weight: bold;
+}
+div.okm .okmclose{ 
+	background: url(../images/x.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	color:transparent;
+}
+div.okm .okmmessage{ 
+	 
+}
+div.okm .okmbuttons{ 
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin:10px auto 20px;
+}
+
+
+div.okm button{
+		
+}
+div.okm button:hover{ 
+	
+}
+
+
+div.okm button.okmdefaultbutton{ 
+	margin-right: 10px;
+}
+.okmwarning .okm .okmbuttons{ 
+}
+
+/*
+------------------------------
+	notice
+------------------------------
+*/
+.noticefade{
+	position: absolute; 
+	background-color: #aaaaaa; 
+}
+div.notice{ 
+	width: 350px;
+	position: absolute; 
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-box-shadow:
+	0px 1px 3px rgba(000,000,000,0.5);
+	-webkit-box-shadow:
+	0px 1px 3px rgba(000,000,000,0.5);
+	background:URL(../images/notice_title.png) top repeat-x #fefefe;
+}
+
+div.okm-notice{
+	padding: 7px 12px;;
+	border-bottom: 1px dotted #DEDEDE;
+	font-size: 13px;
+	font-weight:bold;
+	background: url("../images/bullet2.png") no-repeat 0 8px;
+	text-align: left;
+	line-height:100%;
+}
+div.okm-notice .noticehyperlink {
+	background: url(../images/hyperlink.png) no-repeat;
+	display:inline-block;
+	width:12px;
+	height:9px;
+	margin-left: 5px;	
+}
+
+div.noticemessage .dialog_title{
+	font-weight: bold;
+	display: inline;
+	z-index: 3200;
+	margin:25px 37%;
+	font-size:20px;
+	text-align:center;
+	color:#aaa
+}
+
+div.noticemessage .dialog_content_nod {
+	margin: 20px auto -40px;
+	padding: 0 30px;
+}
+div.notice .noticecontainer{ 
+	 font-weight: bold;
+}
+div.notice .noticeclose{ 
+	background: url(../images/x.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	color:transparent;
+}
+div.notice .noticemessage{ 
+	 text-align:center;
+	 padding-top:40px;
+}
+div.notice .noticebuttons{ 
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+
+div.notice button{
+		
+}
+div.notice button:hover{ 
+	opacity:0.8;
+}
+
+
+div.notice button.noticedefaultbutton{ 
+background: #222 url(../images/overlay.png) repeat-x;
+text-decoration: none;
+font-weight: bold;
+line-height: 1;
+border-bottom: 1px solid #222;
+background-color: #2DAEBF;
+font-size: 11px;
+color: white;
+padding: 4px 8px;
+border-radius: 3px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+text-shadow: 0 -1px 1px 
+rgba(0, 0, 0, 0.25);
+border: none;
+cursor: pointer;
+margin: 0 10px 0 5px;
+}
+.noticewarning .notice .noticebuttons{ 
+}
+
+div.notice .noticehyperlink {
+	background: url(../images/hyperlink.png) no-repeat;
+	display:inline-block;
+	width:12px;
+	height:10px;
+	margin-left: 5px;	
+}
+
+/*
+------------------------------
+	Impromptu's
+------------------------------
+*/
+.jqifade{
+	position: absolute; 
+	background-color: #aaaaaa; 
+}
+div.jqi{ 
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border:1px solid #cccccc;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5);
+		
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5);
+		
+	background:url(../images/dialog_title.png) repeat-x top #fefefe;
+	
+	
+	
+	width: 400px; 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	position: absolute; 
+	font-size: 11px; 
+	text-align: left; 
+	padding: 7px;
+
+}
+div.jqi .jqicontainer{ 
+	font-weight: bold; 
+}
+div.jqi .jqiclose{ 
+	background: url(../images/x.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer; 
+	color:transparent
+}
+div.jqi .jqimessage{ 
+	padding: 10px; 
+	line-height: 20px; 
+	color: #333;
+	font-family:"NanumGothicBolder",Malgun Gothic,sans-serif;
+	font-size:12px;
+	letter-spacing:-1px;
+}
+div.jqi .jqimessage center{ 
+	font-size: 15px;
+	font-family: "NanumGothicBolder",Malgun Gothic,sans-serif;
+	font-weight: bold;
+	color: #3A7EA2;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	height: 16px;
+	letter-spacing: -1px;
+	top:5px;
+	left:5px;
+}
+
+div.jqi .jqimessage center font{
+	color:#4b89a9;
+	font-weight:bold;
+} 
+
+div.jqi .jqibuttons{ 
+	text-align: center; 
+	padding: 3px 0 3px 0; 
+
+}
+div.jqi button{ 
+	
+}
+div.jqi button:hover{ 
+	
+}
+div.jqi button.jqidefaultbutton{
+	margin:5px;
+	
+}
+.jqiwarning .jqi .jqibuttons{ 
+	background-color: #BF5E26;
+}
+
+/*
+------------------------------
+	impromptu
+------------------------------
+*/
+.impromptuwarning .impromptu{ background-color: #aaaaaa; }
+.impromptufade{
+	position: absolute;
+	background-color: #ffffff;
+}
+div.impromptu{
+    position: absolute;
+	background-color: #cccccc;
+	padding: 10px; 
+	width: 300px;
+	text-align: left;
+}
+div.impromptu .impromptuclose{
+    float: right;
+    margin: -35px -10px 0 0;
+    cursor: pointer;
+    color: #213e80;
+}
+div.impromptu .impromptucontainer{
+	background-color: #213e80;
+	padding: 5px; 
+	color: #ffffff;
+	font-weight: bold;
+}
+div.impromptu .impromptumessage{
+	background-color: #415ea0;
+	padding: 10px;
+}
+div.impromptu .impromptubuttons{
+	text-align: center;
+	padding: 5px 0 0 0;
+}
+div.impromptu button{
+	padding: 3px 10px 3px 10px;
+	margin: 0 10px;
+}
+
+/*
+------------------------------
+	columns ex
+------------------------------
+*/
+.colsJqifadewarning .colsJqi{ background-color: #b0be96; }
+.colsJqifade{
+	position: absolute;
+	background-color: #ffffff;
+}
+div.colsJqi{
+    position: absolute;
+	background-color: #d0dEb6;
+	padding: 10px; 
+	width: 400px;
+	text-align: left;
+}
+div.colsJqi .colsJqiclose{
+    float: right;
+    margin: -35px -10px 0 0;
+    cursor: pointer;
+    color: #bbbbbb;
+}
+div.colsJqi .colsJqicontainer{
+	background-color: #e0eEc6;
+	padding: 5px; 
+	color: #ffffff;
+	font-weight: bold;
+	height: 160px;
+}
+div.colsJqi .colsJqimessage{
+	background-color: #c0cEa6;
+	padding: 10px;
+	width: 280px;
+	height: 140px;
+	float: left;
+}
+div.colsJqi .jqibuttons{
+	text-align: center;
+	padding: 5px 0 0 0;
+}
+div.colsJqi button{
+	background: url(../images/button_bg.jpg) top left repeat-x #ffffff;
+	border: solid #777777 1px;
+	font-size: 12px;
+	padding: 3px 10px 3px 10px;
+	margin: 5px 5px 5px 10px;
+	width: 75px;
+}
+div.colsJqi button:hover{
+	border: solid #aaaaaa 1px;
+}
+
+/*
+------------------------------
+	brown theme
+------------------------------
+*/
+.brownJqiwarning .brownJqi{ background-color: #cccccc; }
+.brownJqifade{
+	position: absolute;
+	background-color: #ffffff;
+}
+div.brownJqi{
+	position: absolute;
+	background-color: transparent;
+	padding: 10px;
+	width: 300px;
+	text-align: left;
+}
+div.brownJqi .brownJqiclose{
+    float: right;
+    margin: -20px 0 0 0;
+    cursor: pointer;
+    color: #777777;
+    font-size: 11px;
+}
+div.brownJqi .brownJqicontainer{
+	position: relative;
+	background-color: transparent;
+	border: solid 1px #5F5D5A;
+	color: #ffffff;
+	font-weight: bold;
+}
+div.brownJqi .brownJqimessage{
+	position: relative;
+	background-color: #F7F6F2;
+	border-top: solid 1px #C6B8AE;
+	border-bottom: solid 1px #C6B8AE;
+}
+div.brownJqi .brownJqimessage h3{
+	background: url(../images/brown_theme_gradient.jpg) top left repeat-x #ffffff;
+	margin: 0;
+	padding: 7px 0 7px 15px;
+	color: #4D4A47;
+}
+div.brownJqi .brownJqimessage p{
+	padding: 10px;
+	color: #777777;
+}
+div.brownJqi .brownJqimessage img.helpImg{
+	position: absolute;
+	bottom: -25px;
+	left: 10px;
+}
+div.brownJqi .brownJqibuttons{
+	text-align: right;
+}
+div.brownJqi button{
+	background: url(../images/brown_theme_gradient.jpg) top left repeat-x #ffffff;
+	border: solid #777777 1px;
+	font-size: 12px;
+	padding: 3px 10px 3px 10px;
+	margin: 5px 5px 5px 10px;
+}
+div.brownJqi button:hover{
+	border: solid #aaaaaa 1px;
+}
+
+/*
+*------------------------
+*   clean blue ex
+*------------------------
+*/
+.cleanbluewarning .cleanblue{ background-color: #acb4c4; }
+.cleanbluefade{ position: absolute; background-color: #aaaaaa; }
+div.cleanblue{ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; position: absolute; background-color: #ffffff; width: 300px; font-size: 11px; text-align: left; border: solid 1px #213e80; }
+div.cleanblue .cleanbluecontainer{ background-color: #ffffff; border-top: solid 14px #213e80; padding: 5px; font-weight: bold; }
+div.cleanblue .cleanblueclose{ float: right; width: 18px; cursor: default; margin: -19px -12px 0 0; color: #ffffff; font-weight: bold; }
+div.cleanblue .cleanbluemessage{ padding: 10px; line-height: 20px; font-size: 11px; color: #333333; }
+div.cleanblue .cleanbluebuttons{ text-align: right; padding: 5px 0 5px 0; border: solid 1px #eeeeee; background-color: #f4f4f4; }
+div.cleanblue button{ padding: 3px 10px; margin: 0 10px; background-color: #314e90; border: solid 1px #f4f4f4; color: #ffffff; font-weight: bold; font-size: 12px; }
+div.cleanblue button:hover{ border: solid 1px #d4d4d4; }
+
+/*
+*------------------------
+*   Ext Blue Ex
+*------------------------
+*/
+.extbluewarning .extblue{ border:1px red solid; }
+.extbluefade{ position: absolute; background-color: #ffffff; }
+div.extblue{ border:1px #6289B6 solid; position: absolute; background-color: #CAD8EA; padding: 0; width: 300px; text-align: left; }
+div.extblue .extblueclose{ background-color: #CAD8EA; margin:2px -2px 0 0; cursor: pointer; color: red; text-align: right; }
+div.extblue .extbluecontainer{ background-color: #CAD8EA; padding: 0 5px 5px 5px; color: #000000; font:normal 11px Verdana; }
+div.extblue .extbluemessage{ background-color: #CAD8EA; padding: 0; margin:0 15px 15px 15px; }
+div.extblue .extbluebuttons{ text-align: center; padding: 0px 0 0 0; }
+div.extblue button{ padding: 1px 4px; margin: 0 10px; background-color:#cccccc; font-weight:normal; font-family:Verdana; font-size:10px; }
+
+/*
+*------------------------
+*   smooth Ex
+*------------------------
+*/
+.jqismoothfade{ position: absolute; background-color: #333333; }
+div.jqismooth{ width: 350px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; position: absolute; background-color: #ffffff; font-size: 11px; text-align: left; border: solid 3px #e2e8e6; -moz-border-radius: 10px; -webkit-border-radius: 10px; padding: 7px; }
+div.jqismooth .jqismoothcontainer{ font-weight: bold; }
+div.jqismooth .jqismoothclose{ position: absolute; top: 0; right: 0; width: 18px; cursor: default; text-align: center; padding: 2px 0 4px 0; color: #727876; font-weight: bold; background-color: #e2e8e6; -moz-border-radius-bottomLeft: 5px; -webkit-border-bottom-left-radius: 5px; border-left: solid 1px #e2e8e6; border-bottom: solid 1px #e2e8e6;  }
+div.jqismooth .jqismoothmessage{ padding: 10px; line-height: 20px; color: #444444; }
+div.jqismooth .jqismoothbuttons{ text-align: right; padding: 5px 0 5px 0; border: solid 1px #e2e8e6; background-color: #f2f8f6; }
+div.jqismooth button{ padding: 3px 10px; margin: 0 10px; background-color: #2F6073; border: solid 1px #f4f4f4; color: #ffffff; font-weight: bold; font-size: 12px; }
+div.jqismooth button:hover{ background-color: #728A8C; }
+div.jqismooth button.jqismoothdefaultbutton{ background-color: #BF5E26; }
+.jqismoothwarning .jqismooth .jqismoothbuttons{ background-color: #BF5E26; }
+
+/*
+*------------------------
+*   smooth2 Ex
+*------------------------
+*/
+.jqismooth2fade{ position: absolute; background-color: #aaaaaa; }
+div.jqismooth2{ width: 350px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; position: absolute; background-color: #ffffff; font-size: 11px; text-align: left; border: solid 3px #e2e8e6; -moz-border-radius: 10px; -webkit-border-radius: 10px; padding: 7px; }
+div.jqismooth2 .jqismooth2container{ font-weight: bold; }
+div.jqismooth2 .jqismooth2close{ display: none; float: right; margin: -20px 0 0 0; cursor: pointer; color: #777777; font-size: 0px; }
+div.jqismooth2 .jqismooth2message{ padding: 10px; line-height: 20px; color: #444444; }
+div.jqismooth2 .jqismooth2buttons{ text-align: right; padding: 5px 0 5px 0; border: solid 1px #e2e8e6; background-color: #f2f8f6; }
+div.jqismooth2 button{ padding: 3px 10px; margin: 0 10px; background-color: #2F6073; border: solid 1px #f4f4f4; color: #ffffff; font-weight: bold; font-size: 12px; }
+div.jqismooth2 button:hover{ background-color: #728A8C; }
+div.jqismooth2 button.jqismooth2defaultbutton{ background-color: #BF5E26; }
+.jqismooth2warning .jqismooth2 .jqismooth2buttons{ background-color: #BF5E26; }
+
+/*
+*------------------------
+*   bookmark
+*------------------------
+*/
+.jqibookmarkfade{
+	position: absolute; 
+	background-color: #aaaaaa; 
+}
+div.jqibookmark{ 
+	width: 400px; 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	position: absolute; 
+	background-color: #ffffff; 
+	font-size: 11px; 
+	text-align: left; 
+	border: solid 1px #eeeeee;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 7px;
+}
+div.jqibookmark .jqibookmarkcontainer{ 
+	font-weight: bold; 
+}
+div.jqibookmark .jqibookmarkclose{ 
+	position: absolute;
+	top: 4px; right: -2px; 
+	width: 18px; 
+	cursor: default; 
+	color: #bbbbbb; 
+	font-weight: bold; 
+}
+div.jqibookmark .jqibookmarkmessage{ 
+	padding: 10px;	 
+	color: #444444; 
+}
+div.jqibookmark .jqismooth2inputs{
+	margin: 10px 0px 0px 0px; 
+	text-align: right; 
+	padding: 3px 0 3px 0; 
+	border: solid 1px #eeeeee; 
+	background-color: #f4f4f4;
+}
+div.jqibookmark .jqismooth2inputs input{ 
+	padding: 3px 10px; 
+	margin: 0 10px; 
+	background-color: #BF5E26; 
+	border: solid 1px #f4f4f4; 
+	color: #ffffff; 
+	font-weight: bold; 
+	font-size: 11px; 
+}
+
+
+div.jqibookmark button:hover{ 
+	background-color: #728A8C;
+}
+div.jqibookmark button.jqibookmarkdefaultbutton{ 
+	/*background-color: #8DC05B;*/
+	background-color: #BF5E26;
+}
+.jqibookmarkwarning .jqibookmark .jqibookmarkbuttons{ 
+	background-color: #BF5E26;
+}
+
+/*
+------------------------------
+	Color
+------------------------------
+*/
+.jqicolorfade{
+	position: absolute; 
+	background-color: #aaaaaa; 
+}
+div.jqicolor{ 
+	width: 260px; 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	position: absolute; 
+	background-color: #ffffff; 
+	font-size: 11px; 
+	text-align: left; 
+	border: solid 1px #eeeeee;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 7px;
+}
+div.jqicolor .jqicolorcontainer{ 
+	font-weight: bold; 
+}
+div.jqicolor .jqicolorclose{ 
+	position: absolute;
+	top: 4px; right: -2px; 
+	width: 18px; 
+	cursor: default; 
+	color: #bbbbbb; 
+	font-weight: bold; 
+}
+div.jqicolor .jqicolormessage{ 
+	padding: 10px; 
+	line-height: 15px; 
+	color: #444444; 
+}
+div.jqicolor .jqicolorbuttons{ 
+	text-align: right; 
+	padding: 3px 0 3px 0; 
+	border: solid 1px #eeeeee; 
+	background-color: #f4f4f4;
+}
+div.jqicolor button{ 
+	padding: 3px 10px; 
+	margin: 0 10px; 
+	background-color: #2F6073; 
+	border: solid 1px #f4f4f4; 
+	color: #ffffff; 
+	font-weight: bold; 
+	font-size: 11px; 
+}
+div.jqicolor button:hover{ 
+	background-color: #728A8C;
+}
+div.jqicolor button.jqicolordefaultbutton{ 
+	/*background-color: #8DC05B;*/
+	background-color: #BF5E26;
+}
+.jqicolorwarning .jqicolor .jqicolorbuttons{ 
+	background-color: #BF5E26;
+}

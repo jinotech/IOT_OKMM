@@ -1,0 +1,211 @@
+@CHARSET "EUC-KR";
+body{
+		font-family: "NanumGothicRegular", Malgun Gothic, sans-serif;
+		
+}
+table{
+	border-collapse:collapse;
+	font-size:12px;
+	text-align:center;
+}
+
+th {
+text-transform: capitalize;
+font-size: 12px;
+font-weight:600;
+/*background:url(../../images/light.png) 0 0 repeat-x #333;*/
+color: #333;
+text-align: center;
+border-bottom:1px solid #bbb;
+padding:8px 0;
+}
+
+th.tid{
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+th.tetc{
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+table a{
+	text-decoration:none;
+	color: #008EE8;
+}
+
+table a:hover{
+	color: #EC8526;
+}
+
+
+table a strong{
+	text-decoration:none;
+	color:#666;
+}
+th a.true{
+	background:url(../../images/arrow_ud.png) -2px 0 no-repeat;
+}
+th a.true:hover{
+	background:url(../../images/arrow_ud.png) -2px -12px no-repeat;
+}
+
+th a.false{
+	background:url(../../images/arrow_ud.png) -31px 0 no-repeat;
+}
+th a.false:hover{
+	background:url(../../images/arrow_ud.png) -31px -12px no-repeat;
+}
+
+table .th_title, .pagenum tr{
+	border:none;
+}
+tr{
+	border-bottom:1px dotted #ccc;
+	height:30px;
+}
+
+.panes{
+	width:1000px;
+}
+
+
+div.table_box, div.adduser{
+	background: white;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin: 20px;
+	width:1000px;
+	float:left;
+}
+div.table_box_title{
+	background: #E7E7E7;
+	font-size: 13px;
+	color: #616161;
+	padding: 10px;
+	font-weight: 600;
+	margin: 4px;
+	border-radius: 3px 3px 0 0;
+}
+div.table_box_con{
+	margin:0;
+	padding:20px;
+	padding-top:5px;
+}
+
+/*-----------사용자추가-----------*/
+.useraddtable{
+	width: 96%;
+	margin: 0 20px;
+}
+.useraddtable td{
+	text-align:left;
+}
+.useraddtable td.r1{
+	width:10%;
+	font-size: 12px;
+	font-weight: 600;
+	color: #333;
+}
+
+.addbtndiv{
+	margin: 10px 0 0 18px;
+}
+
+/*-------그룹관리-------*/
+.groupcounter {
+	text-align: right;
+	font-size: 12px;
+	color: #C40101;
+	font-weight: 600;
+}
+
+/*---------pagenum---------*/
+.pagenum tr:hover{
+	background:none;
+}
+
+
+/*--------통계:맵-------*/
+.cur_map{
+	font-size:13px;
+	font-weight:600;
+	color:#EC8526;
+	margin-bottom:10px;
+}
+
+.small_box{
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding:10px;
+	margin:10px;
+}
+.small_box.option{
+	width:230px;
+	float:left;
+}
+.small_box.mapno{
+	width:640px;
+	float:left;
+}
+.sml_box_title{
+	margin: 0;
+	padding: 0 5px 5px;
+	color: #333;
+	font-size: 12px;
+	border-bottom: 1px dotted #ccc;
+	font-weight: 600;
+}
+.sml_box_con{
+	padding:10px 10px 0;
+}
+
+/*--------알림:공지사항------*/
+#left_line{
+	border-right:1px dotted #ccc;
+	padding-left:10px;
+}
+
+.center_btn{
+	margin:10px auto;
+}
+
+#detail-modal {
+	width: 300px !important;
+	height: 150px;
+	padding: 50px 20px 0;
+	font-size: 12px;
+	color: #333;
+}
+
+/*------환경설정:관리자정보관리------*/
+div.jqi .jqimessage{
+	padding:0 !important;
+}
+.dialog_title{
+	font-weight:600;
+}
+.dialog_content{
+	margin:20px auto;
+	width:300px;
+}
+#username{
+	width:200px;
+}
+/*input*/
+input, select{
+	font-family: 'NanumGothicWeb';
+	
+}
+
+
+/*excel*/
+.excel_down{
+	font-size:12px;
+	text-decoration:none;
+	color:#17a2c4;
+}
+.excel_down:hover{
+	text-decoration:underline;
+}

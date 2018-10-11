@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+<!--
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >
+    <property name="driverClassName" value="${jdbc.driverClassName}"/>
+    <property name="url" value="${jdbc.url}"/>
+	<property name="username" value="${jdbc.username}"/>
+	<property name="password" value="${jdbc.password}"/>
+</bean>
+-->
+
+<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+
+<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	<property name="dataSource" ref="dataSource"/>
+	<property name="mappingResources">
+		<list>
+			<value>../okmindmap.hbm.xml</value>
+		</list>
+	</property>
+	<property name="hibernateProperties">
+		<value>hibernate.dialect=org.hibernate.dialect.MySQL5Dialect</value>
+	</property>
+</bean>
+
+<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	<property name="sessionFactory">
+		<ref bean="sessionFactory"/>
+	</property>
+</bean>
+
+
+<!-- ========================= DAO DEFINITIONS ========================= -->
+<!--
+<bean id="mindmapDAO" class="com.okmindmap.dao.hibernate.MindmapDAOImpl">
+	<property name="hibernateTemplate">
+        <ref bean="hibernateTemplate"/>    
+    </property>
+</bean>
+-->
+
+
+
+</beans>

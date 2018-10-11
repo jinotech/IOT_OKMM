@@ -1,0 +1,33 @@
+ol,ul {
+    padding: 10px;
+}
+
+ol li {
+    padding: 0px;
+    margin-left: 35px;
+}
+
+ul li {
+    padding: 0px;
+    margin-left: 35px;
+}
+
+a:link {
+	text-decoration: underline;
+	color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: pink;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}

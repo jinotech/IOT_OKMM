@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="com.okmindmap.model.ArrowLink" table="mm_arrowlink" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="color">
+			<column name="color"/>
+		</property>
+		<property name="destination">
+			<column name="destination"/>
+		</property>
+		<property name="endArrow">
+			<column name="endarrow"/>
+		</property>
+		<property name="endInclination">
+			<column name="endinclination"/>
+		</property>
+		<property name="identity">
+			<column name="identity"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+		<property name="startArrow">
+			<column name="startarrow"/>
+		</property>
+		<property name="startInclination">
+			<column name="startinclination"/>
+		</property>
+	</class>
+	
+	<class name="com.okmindmap.model.Attribute" table="mm_attribute" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="name">
+			<column name="name"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+		<property name="value">
+			<column name="value"/>
+		</property>
+	</class>
+	
+	<class name="com.okmindmap.model.Cloud" table="mm_cloud" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="color">
+			<column name="color"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+	</class>
+	
+	<class name="com.okmindmap.model.Edge" table="mm_edge" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="color">
+			<column name="color"/>
+		</property>
+		<property name="style">
+			<column name="style"/>
+		</property>
+		<property name="width">
+			<column name="width"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+	</class>
+	
+	<class name="com.okmindmap.model.Font" table="mm_font" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="bold">
+			<column name="bold"/>
+		</property>
+		<property name="italic">
+			<column name="italic"/>
+		</property>
+		<property name="name">
+			<column name="name"/>
+		</property>
+		<property name="size">
+			<column name="size"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+	</class>
+	
+	<class name="com.okmindmap.model.Icon" table="mm_icon" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="builtin">
+			<column name="builtin"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+	</class>
+	
+	<class name="com.okmindmap.model.RichContent" table="mm_richcontent" lazy="false">
+		<id name="id" column="id"> 
+            <generator class="increment"/>
+        </id>
+		
+		<property name="content">
+			<column name="content"/>
+		</property>
+		<property name="type">
+			<column name="type"/>
+		</property>
+		<property name="nodeId">
+			<column name="node_id"/>
+		</property>
+	</class>
+</hibernate-mapping>

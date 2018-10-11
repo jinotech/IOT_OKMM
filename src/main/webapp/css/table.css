@@ -1,0 +1,43 @@
+
+table {
+	border-collapse:collapse;
+	border-color:#7d848e;;
+}
+th {
+	background:url(../images/tableBg.gif) top no-repeat #2b303a;	
+	color:#FFF;
+	font-weight:bold;
+	font-size:11px;
+}
+
+td {
+	font-size: 0.8em;
+}
+
+td.header {
+	font-size: 0.8em;
+	font-weight: bold;
+	background-color: #5f73c9;
+	color:#fff;
+}
+
+td.align-right {
+}
+
+a {
+	color:#265992;
+	text-decoration:none
+}
+a:hover {
+	text-decoration:underline
+}
+a:visited {
+	color: #2f2f2f;
+}
+a:active {
+	color:#2f2f2f;
+}
+
+.notice {
+	color: #ff0000;
+}
