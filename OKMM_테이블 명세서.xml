@@ -1,0 +1,3585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">필드순번</Data></Cell>
+			<Cell><Data ss:Type="String">필드명</Data></Cell>
+			<Cell><Data ss:Type="String">데이터 TYPE</Data></Cell>
+			<Cell><Data ss:Type="String">데이터 LENGTH</Data></Cell>
+			<Cell><Data ss:Type="String">KEY</Data></Cell>
+			<Cell><Data ss:Type="String">NULL값여부</Data></Cell>
+			<Cell><Data ss:Type="String">자동여부</Data></Cell>
+			<Cell><Data ss:Type="String">디폴트값</Data></Cell>
+			<Cell><Data ss:Type="String">필드설명</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">color</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">destination</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(50)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">endarrow</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">endinclination</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">identity</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(50)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">startarrow</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">startinclination</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">value</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">map_revision_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">show_attributes</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">boardId</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">boardType</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">title</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(300)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">recom</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">visited</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">insertdate</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">updatedate</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">username2</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11</Data></Cell>
+			<Cell><Data ss:Type="String">userpassword</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">12</Data></Cell>
+			<Cell><Data ss:Type="String">userip</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">13</Data></Cell>
+			<Cell><Data ss:Type="String">lang</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(2)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">memoId</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">boardId</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">insertdate</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">username2</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">userpassword</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">userip</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(300)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">lft</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">rgt</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">parentid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">depth</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">NAME</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">lft</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">rgt</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">parentid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">depth</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">is_leaf</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">roomnumber</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">username</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(50)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">message</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(500)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">timecreated</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">on update CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">color</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">discuss_content_seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">discuss_seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">useyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">regid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">updtid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">updated</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">mapid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">discuss_seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">mapid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">leaderyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">useyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">regid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">updtid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">updated</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">discuss_seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">title</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(300)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">viewcount</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">useyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">regid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">updtid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">updated</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">discuss_seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">leaderyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">useyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">regid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">updtid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">updated</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">color</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">style</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">width</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">access_token</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">lastlogin</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">bold</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(5)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">italic</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(5)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(50)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">size</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">width</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">height</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">summary</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">modified</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0000-00-00 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">policy</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">categoryid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">groupid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">status</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">shortname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">groupid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">password</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(64)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">shortname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">builtin</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(50)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">version</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">map_key</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">viewcount</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">map_style</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">lazyloading</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">pt_sequence</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(2000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">queueing</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11</Data></Cell>
+			<Cell><Data ss:Type="String">short_url</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">12</Data></Cell>
+			<Cell><Data ss:Type="String">recommend_point</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">user_id</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">mapid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">mapid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">email</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">password</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(64)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">added</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">imagepath</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">xml</Data></Cell>
+			<Cell><Data ss:Type="String">longblob</Data></Cell>
+			<Cell><Data ss:Type="String">longblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">saved</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(11)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">bgroup</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">bgroup_name</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">mgroup</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">mgroup_name</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">order_num</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">useyn</Data></Cell>
+			<Cell><Data ss:Type="String">char</Data></Cell>
+			<Cell><Data ss:Type="String">char(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">imgurl</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">message</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11</Data></Cell>
+			<Cell><Data ss:Type="String">script</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">seq</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">background_color</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">color</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">folded</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(5)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">identity</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(50)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">link</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(2000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">position</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">style</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">12</Data></Cell>
+			<Cell><Data ss:Type="String">creator</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">13</Data></Cell>
+			<Cell><Data ss:Type="String">creator_ip</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(40)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">14</Data></Cell>
+			<Cell><Data ss:Type="String">modified</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">15</Data></Cell>
+			<Cell><Data ss:Type="String">modifier</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">16</Data></Cell>
+			<Cell><Data ss:Type="String">modifier_ip</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(40)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">17</Data></Cell>
+			<Cell><Data ss:Type="String">hgap</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">18</Data></Cell>
+			<Cell><Data ss:Type="String">vgap</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">19</Data></Cell>
+			<Cell><Data ss:Type="String">vshift</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">20</Data></Cell>
+			<Cell><Data ss:Type="String">encrypted_content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">21</Data></Cell>
+			<Cell><Data ss:Type="String">extra_data</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">22</Data></Cell>
+			<Cell><Data ss:Type="String">node_type</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(40)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">23</Data></Cell>
+			<Cell><Data ss:Type="String">lft</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">24</Data></Cell>
+			<Cell><Data ss:Type="String">rgt</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">25</Data></Cell>
+			<Cell><Data ss:Type="String">parent_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">26</Data></Cell>
+			<Cell><Data ss:Type="String">client_id</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(40)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">27</Data></Cell>
+			<Cell><Data ss:Type="String">line_color</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">title</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">hide</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">regid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">updtid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">updated</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">filepath</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(4000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">title</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">content_ko</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">content_en</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">link_ko</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">link_en</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">priority</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">hide</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">regid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11</Data></Cell>
+			<Cell><Data ss:Type="String">updtid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">12</Data></Cell>
+			<Cell><Data ss:Type="String">updated</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">13</Data></Cell>
+			<Cell><Data ss:Type="String">bbs_gb</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(5)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">setting_key</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(200)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">setting_value</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(200)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">hook_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">reminduserat</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(15)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">persistent_key</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(64)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">lastlogin</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">x</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">y</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">scalex</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">scaley</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">rotate</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String">double</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">showdepths</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">roomnumber</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">textdata</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String">timestamp</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">mapid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">filename</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">path</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">mime</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">filesize</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">node_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">type</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(5)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">content</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String">text</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">map_id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">shortname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">roleid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">roleid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">capability</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">permission</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(10)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">mapid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">sharetype</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">shareid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">groupid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">shareid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">password</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(64)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">shareid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">permissiontype</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">permited</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">shortname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">sortorder</Data></Cell>
+			<Cell><Data ss:Type="String">int</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(255)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">shortname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">username</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">email</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">firstname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5</Data></Cell>
+			<Cell><Data ss:Type="String">lastname</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">password</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(64)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">7</Data></Cell>
+			<Cell><Data ss:Type="String">auth</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">manual</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">8</Data></Cell>
+			<Cell><Data ss:Type="String">confirmed</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">9</Data></Cell>
+			<Cell><Data ss:Type="String">deleted</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">created</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11</Data></Cell>
+			<Cell><Data ss:Type="String">last_access</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(15) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">12</Data></Cell>
+			<Cell><Data ss:Type="String">last_map</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">13</Data></Cell>
+			<Cell><Data ss:Type="String">self</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(1000)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">userid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">fieldid</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4</Data></Cell>
+			<Cell><Data ss:Type="String">data</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(250)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String">id</Data></Cell>
+			<Cell><Data ss:Type="String">bigint</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20) unsigned</Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2</Data></Cell>
+			<Cell><Data ss:Type="String">field</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(40)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">3</Data></Cell>
+			<Cell><Data ss:Type="String">descript</Data></Cell>
+			<Cell><Data ss:Type="String">varchar</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(250)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>
